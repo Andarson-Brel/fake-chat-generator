@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-color: #183140;
+  --primary-color-light: #2f4653;
+  --secondary-color: #50dead;
+  --secondary-color-light: #ddfef3;
+  --background-color: #f5fcff;
+
+  --general-font: "inter", sans-serif;
+  --chat-interface-font: Helvetica;
+}
+html {
+  font-size: 10px;
+}
+/* defaul styling */
+body {
+  font-family: var(--general-font);
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  background-color: var(--background-color);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.ninety-percent {
+  width: 90%;
+
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  box-shadow: 0px 4px 20px -7px rgba(0, 0, 0, 0.1);
+}
+
+/* display flex styles */
+.d-flex {
+  display: flex;
+}
+.d-flex-space-b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.d-flex-space-a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-around;
+}
+/* button style */
+
+.active-button:hover {
+  background-color: var(--secondary-color-light);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.inactive-button {
+  background-color: transparent;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 10px 16px;
+
+  border: 1px solid var(--secondary-color);
+}
+
+.inactive-button:hover {
+  background-color: #50dead;
+  color: #f5fcff;
+}
+
+/* the main container has the max-width for the general body */
+
+.nav-item,
+.nav-item a {
+  padding: 1rem 1.6rem;
+  color: var(--primary-color);
+}
+.nav-link.active,
+.nav-link:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-radius: 4px;
+}
+.more-icon {
+  width: 1.6rem;
+}
+.nav-item {
+  position: relative;
+}
+.sub-menu {
+  display: none;
+  width: 80%;
+}
+.sub-menu li {
+  margin-top: 1.6rem;
+  color: var(--primary-color);
+  padding: 10px 6px;
+}
+.sub-menu li:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+.nav-item .nav-link:hover .sub-menu {
+  display: block;
+  position: absolute;
+  background-color: var(--background-color);
+  margin-top: 1rem;
+  box-shadow: 0px 4px 20px -7px rgba(0, 0, 0, 0.1);
+}

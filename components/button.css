@@ -3,15 +3,16 @@
   --primary-color-light: #2f4653;
   --secondary-color: #50dead;
   --scondary-color-light: #ddfef3;
-  --backround-color: #f5fcff;
+  --background-color: #f5fcff;
 }
 
 .active-button {
   background-color: var(--secondary-color);
-  color: var(--backround-color);
+  color: var(--background-color);
   padding: 10px 16px;
-  border-radius: 8px;
+  border-radius: 6px;
   border: none;
+  cursor: pointer;
 }
 
 .active-button:hover {
@@ -24,13 +25,18 @@
   background-color: transparent;
   border-color: var(--secondary-color);
   color: var(--secondary-color);
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 10px 16px;
 
   border: 1px solid var(--secondary-color);
+  cursor: pointer;
 }
 
 .inactive-button:hover {
   background-color: #50dead;
   color: #f5fcff;
+}
+.inactive-button.active {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
 }

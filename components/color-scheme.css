@@ -2,8 +2,8 @@
   --primary-color: #183140;
   --primary-color-light: #2f4653;
   --secondary-color: #50dead;
-  --scondary-color-light: #ddfef3;
-  --backround-color: #f5fcff;
+  --secondary-color-light: #ddfef3;
+  --background-color: #f5fcff;
 }
 .primary-color {
   background-color: var(--primary-color);
@@ -15,10 +15,10 @@
   background-color: var(--secondary-color);
 }
 .secondary-color-light {
-  background-color: var(--scondary-color-light);
+  background-color: var(--secondary-color-light);
 }
 .background-color {
-  background-color: var(--backround-color);
+  background-color: var(--background-color);
 }
 div {
   padding: 4em;
