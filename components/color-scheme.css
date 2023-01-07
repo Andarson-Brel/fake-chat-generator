@@ -20,7 +20,4 @@
 .background-color {
   background-color: var(--background-color);
 }
-div {
-  padding: 4em;
-  color: red;
-}
+/*  */

@@ -1,0 +1,45 @@
+.mrg-t {
+  margin-top: 5rem;
+}
+.interface-card-container {
+  padding: 5rem 0;
+}
+.interface-desc {
+  margin: 1rem 0;
+}
+.cards-container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}
+.card {
+  width: 320px;
+  box-shadow: 0px 2px 20px -3px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-details {
+  padding: 2rem;
+}
+.card-thmb {
+  position: relative;
+}
+.center-img {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.card-title {
+  margin: 2rem 0 1rem;
+}
+.button-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.card-desc {
+  margin: 2rem 0;
+  color: var(--primary-color-light);
+}
