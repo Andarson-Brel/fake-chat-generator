@@ -8,12 +8,33 @@
     <link rel="stylesheet" href="landing-page-layout.css" />
   </head>
   <body>
-    The landing page layout component has one general container housing the two
-    sub containers, then the two sub containers each contain an illustration and
-    description, the description container has tittle, description and button
-    (button used from the button components) For the features and how it works
-    section, they both have the same layout and appearance a component can be
-    built for them too with that, we should be done with the landing page and
-    it's components.
+    <!-- DIV FOR COMPONENTS LIKE THE HOW TO SECTION AND FEATURES SECTION -->
+    <div class="features mb-md primary-color">
+      <h2 class="mb-md features__heading">Features</h2>
+      <p class="features__text">
+        With its easy-to-use interface and variety of features, you can create
+        realistic and convincing fake chats in just a few clicks. See features
+        Below
+      </p>
+    </div>
+
+    <!-- THE GRID SECTION FOR LANDING PAGE THAT HIGLIGHTS THE DIFFERENT SERVICES -->
+    <div class="features__descriptions">
+      <div class="features__descriptions--img">
+        <img src="/images/instagram-illustration.svg" alt="" />
+      </div>
+      <div class="features__descriptions--cont">
+        <h2 class="features__descriptions--title">
+          Generate Fake WhatsApp Chats
+        </h2>
+        <p class="features__descriptions--text mb-lg">
+          Our Fake WhatsApp Chat feature allows you to generate
+          authentic-looking conversations that will fool even the most observant
+          of friends. With customizable profiles, chat bubbles, and timestamps,
+          you can create a convincing chat that looks just like the real thing.
+        </p>
+        <a class="" href="">Generate WhatsApp Chat</a>
+      </div>
+    </div>
   </body>
 </html>
