@@ -20,4 +20,7 @@
 .background-color {
   background-color: var(--background-color);
 }
+p {
+  color: var(--primary-color-light);
+}
 /*  */

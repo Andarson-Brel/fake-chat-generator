@@ -5,51 +5,8 @@
   --scondary-color-light: #ddfef3;
   --backround-color: #f5fcff;
   --white: #ffff;
-}
-.primary-color {
-  background-color: var(--primary-color);
-}
-.primary-color-light {
-  background-color: var(--primary-color-light);
-}
-.secondary-color {
-  background-color: var(--secondary-color);
-}
-.secondary-color-light {
-  background-color: var(--scondary-color-light);
-}
-.background-color {
-  background-color: var(--backround-color);
-}
-html {
-  box-sizing: border-box;
-  font-size: 62.54%;
-}
-html {
-  font-size: 62.5%;
-}
-@media only screen and (max-width: 75em) {
-  html {
-    font-size: 56.25%;
-  }
-}
-
-@media only screen and (max-width: 50.25em) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media only screen and (min-width: 112.5em) {
-  html {
-    font-size: 75%;
-  }
-}
-
-body {
-  color: var(--primary-color);
-  height: 100vh;
-  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
 }
 
 /* UTILITY CLASSES */
@@ -69,23 +26,42 @@ body {
 }
 
 /* STYES FOR COMPONENTS LIKE THE HOW TO SECTION AND FEATURES SECTION */
+.mrg-tb {
+  margin: 5rem 0;
+}
 .features {
   text-align: center;
-  padding: 1rem 1.5rem;
+  padding: 2rem;
+  margin: 5rem 0;
 }
 .features__text {
+  margin: 0 auto;
+  width: 72%;
   color: var(--white);
 }
-
+.features__text.text-align-left {
+  text-align: left;
+}
 /* STYLES FOR THE GRID SECTION FOR LANDING PAGE THAT HIGLIGHTS THE DIFFERENT SERVICES */
-.features__descriptions {
-  padding: 2rem 10rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.6rem;
+.layout-container {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.layout-container--img {
+  width: 40%;
+}
+.layout-container--img img {
+  width: 100%;
+}
+.layout-container-descriptions {
+  width: 50%;
 }
 @media only screen and (max-width: 57.25em) {
-  .features__descriptions {
+  .layout-container {
     justify-items: center;
     grid-template-columns: 1fr;
   }
@@ -94,6 +70,25 @@ body {
   color: var(--secondary-color);
 }
 .features__heading,
-.features__descriptions--title {
+.layout-container-descriptions--title {
+  margin-bottom: 2rem;
   font-size: 4rem;
+}
+@media (max-width: 950px) {
+  .layout-container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .layout-container-descriptions,
+  .layout-container--img {
+    width: 100%;
+  }
+  .features__heading,
+  .layout-container-descriptions--title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+  .features__text {
+    width: 90%;
+  }
 }
