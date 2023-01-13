@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../components/general-interface.css" />
+
+    <!-- ==================navbar-componentstylesheet======================= -->
+
+    <link rel="stylesheet" href="../components/navbar.css" />
+    <!-- ========================button component stylesheet ============-->
+    <link rel="stylesheet" href="../components/button.css" />
+
+    <!-- typography -->
+    <link rel="stylesheet" href="../components/typography.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/snapchat.css" />
+  </head>
+  <body>
+    <!-- ===================Begining of navbar====================== -->
+    <header class="header">
+      <nav class="nav d-flex-space-b ninety-percent">
+        <div class="nav-logo">
+          <img src="../images/top-logo.svg" alt="" />
+        </div>
+
+        <ul class="nav-menu d-flex-space-b">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">WhatsApp</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Instagram</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Facebook</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Tiktok</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              >More
+              <img src="../images/more-icon.svg" alt="" class="more-icon" />
+              <ul class="sub-menu">
+                <li>About Us</li>
+                <li>Privacy</li>
+                <li>Contact</li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- =========================End of navbar======================= -->
+    <div class="main-container ninety-percent">
+      <div class="general-interface-container d-flex">
+        <div class="control-panel">
+          <h3 class="control-panel-heading">Chat Generator Setting</h3>
+
+          <div class="control-panel-inputs">
+            <form action="sender-details" class="sender-details">
+              <div class="input-containers">
+                <label for="battery"><h4>Battery Percentage</h4></label>
+                <input type="text" placeholder="50%" />
+              </div>
+
+              <div class="input-containers">
+                <label for="User name"><h4>Direct Message With</h4></label>
+                <input type="text" placeholder="john doe" />
+              </div>
+
+              <div class="input-containers">
+                <label for="status"><h4>Status</h4></label>
+                <input type="text" placeholder="Online" />
+              </div>
+            </form>
+            <form action="" class="sender-profile">
+              <div class="sender-container d-flex-space-a">
+                <div class="profile-photo">
+                  <img src="../images/profile.svg" alt="" />
+                </div>
+                <div class="profile-input">
+                  <h4>Profile Photo</h4>
+                  <button class="active-button">Select Image</button>
+                </div>
+              </div>
+            </form>
+
+            <form action="message-input" class="message">
+              <div class="input-containers">
+                <h4>Message</h4>
+                <textarea
+                  name="message-input"
+                  id="message-input"
+                  cols="30"
+                  rows="4"
+                ></textarea>
+              </div>
+              <button class="active-button">Add Message</button>
+            </form>
+          </div>
+        </div>
+        <div class="preview-section">
+          <div class="preview-header d-flex-space-b">
+            <div class="preview-btn-div">
+              <button class="inactive-button active">iPhone</button>
+              <button class="inactive-button">Android</button>
+            </div>
+            <h2 class="preview-heading">Fake WhatsApp Chat Generatort</h2>
+          </div>
+          <h2 class="preview-title">Preview</h2>
+
+          <div class="device-container">
+            <div class="iphone">
+              <div class="task-bar d-flex-space-b">
+                <p class="iphone-time time">12:00</p>
+                <div class="network-wifi d-flex">
+                  <img src="../images/Mobile Signal.svg" alt="" />
+                  <img src="../images/Wifi.svg" alt="" />
+
+                  <div class="battery-container">
+                    <div class="battery-percentage"></div>
+                    <div class="dash"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- ================ -->
+              <div class="i-chat__nav d-flex-space-b">
+                <div class="d-flex">
+                  <img
+                    class="i-profile__pic"
+                    src="/images/snapchat-chat-user.svg"
+                    alt=""
+                  />
+                  <p class="mg-rt">john doe</p>
+                </div>
+
+                <img src="/images/snapchat-chat-call-arrow.svg" alt="" />
+              </div>
+              <div class="chat-section">
+                <div class="chat">
+                  <div class="i-chat">
+                    <div class="i-chat__div">
+                      <p class="i-my-chat">ME</p>
+                      <div class="i-chat-msgs i-my-msgs">
+                        <p>Hii</p>
+                        <p>Hello</p>
+                        <p>How are you!</p>
+                      </div>
+                    </div>
+                    <div class="i-chat__div">
+                      <p class="i-rec-chat">JACK</p>
+                      <div class="i-chat-msgs i-rec-msgs">
+                        <p>Good</p>
+                        <p>Nice</p>
+                        <p>Wonderful</p>
+                      </div>
+                    </div>
+                    <div class="i-chat__div">
+                      <p class="i-my-chat">ME</p>
+                      <div class="i-chat-msgs i-my-msgs">
+                        <p>Good</p>
+                        <p>Nice</p>
+                        <p>Wonderful</p>
+                        <p>Amazing</p>
+                      </div>
+                    </div>
+                    <div class="i-chat__div">
+                      <p class="i-rec-chat">JACK</p>
+                      <div class="i-chat-msgs i-rec-msgs">
+                        <p>Hii</p>
+                        <p>Hello</p>
+                        <p>How are you!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ============ -->
+                <!-- INPUT SECTION -->
+                <div class="i-input__div d-flex-space-a">
+                  <div class="snap-cam d-flex">
+                    <img src="/images/ic_baseline-photo-camera.svg" alt="" />
+                  </div>
+                  <div class="i-chat__input--div">
+                    <input
+                      class="i-chat__input"
+                      type="text"
+                      placeholder="send a chat"
+                      cols="30"
+                    />
+                    <img
+                      class="i-chat__input--icon"
+                      src="/images/snapchat-mic.svg"
+                      alt=""
+                    />
+                  </div>
+                  <img src="/images/snapchat-emoji.svg" alt="" />
+                  <img src="/images/snapchat-gallery.svg" alt="" />
+                  <img src="/images/snapchat-rocket.svg" alt="" />
+                </div>
+              </div>
+              <!-- ============== -->
+              <div class="iphone-bottom">
+                <img src="../images/Home-indicator.svg" alt="" />
+              </div>
+            </div>
+            <div class="android active">
+              <header class="android-header">
+                <div class="android-tasbar d-flex-space-b">
+                  <div class="android-time time">12:00pm</div>
+
+                  <div class="android-network-battery d-flex-space-b">
+                    <img src="../images/Mobile Signal.svg" alt="" />
+                    <img src="../images/Mobile Signal.svg" alt="" />
+
+                    <div class="android-battery-container">
+                      <div class="battery-percentage"></div>
+                      <div class="android-dash"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ================ -->
+              </header>
+              <div class="chat-section"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

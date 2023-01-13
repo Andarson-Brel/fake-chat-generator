@@ -1,0 +1,99 @@
+.task-bar {
+  padding: 5px;
+  background-color: #ffff;
+}
+
+.i-chat__nav {
+  padding: 15px 10px;
+  background-color: #0eadff;
+}
+.i-profile__pic {
+  border-radius: 100%;
+}
+
+.i-chat {
+  display: flex;
+  padding: 10px 0;
+  flex-direction: column;
+  background-color: #fff;
+  height: 100%;
+}
+.i-chat__div {
+  justify-items: flex-start;
+  max-width: 70%;
+  padding: 5px 10px;
+}
+.i-my-chat {
+  font-size: 12px;
+  color: #f23c57;
+  font-weight: 700;
+}
+.i-rec-chat {
+  font-size: 12px;
+  color: #0096e5;
+  font-weight: 700;
+}
+.i-my-msgs {
+  border-left: 2px solid #f23c57;
+}
+.i-rec-msgs {
+  border-left: 2px solid #0096e5;
+}
+.i-chat-msgs {
+  padding: 5px 10px;
+  font-size: 13px;
+}
+.i-input__div {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+}
+.i-chat__input--icon-div {
+  padding: 1rem;
+}
+.i-chat__input {
+  max-height: 50px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #ededed;
+}
+.i-chat__input:focus {
+  outline: 1px solid #e2e2e2;
+}
+.i-chat__input--div {
+  position: relative;
+}
+.i-chat__input--icon {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  transform: translate(-50% -50%);
+}
+
+.iphone-bottom {
+  width: 100%;
+  background: #f6f6f6;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+.snap-cam {
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(237, 237, 237);
+  padding: 7px;
+  border-radius: 100%;
+}
+.iphone.active {
+  display: none;
+}
+.android.active {
+  display: none;
+}

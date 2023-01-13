@@ -1,0 +1,295 @@
+.task-bar {
+  padding: 4px 5px;
+  background-color: #ffff;
+}
+
+.chat-section {
+  background: url(../images/whatsapp-wallpaper.jpg);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+/* ============================ */
+/* CHAT UI SECTION */
+
+/* =============================== */
+/*======== IPHONE CHAT UI ======== */
+.iphone {
+  font-family: "SF Pro Text", sans-serif;
+}
+.i-chat__nav {
+  background-color: hsl(0, 0%, 100%);
+  padding: 5px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.i-chat__timestamp {
+  text-align: center;
+  background-color: #dbdfeb;
+  color: #414350;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 20px;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  z-index: 10;
+}
+.i-chat__profile-pic {
+  border-radius: 100%;
+  width: 35px;
+  object-fit: cover;
+}
+.i-chat__bubble {
+  background-color: var(--background-color);
+  max-width: 80%;
+  border-radius: 13px;
+  padding: 0.8rem 0.8rem 1.7rem;
+  font-size: 1.7rem;
+  margin: 1rem;
+  position: relative;
+}
+.i-my-chat {
+  align-self: flex-end;
+  background-color: #dcf8c7;
+}
+.i-receiver-chat {
+  align-self: flex-start;
+  background-color: #f9f9f9;
+}
+/* THIS IS WHAT GIVES THE CHAT BUBBLE EFFECT */
+.i-pointy-stuff {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+.i-my-pointy-stuff {
+  background-color: #dcf8c7;
+  transform: rotate(180deg) skew(25deg);
+  bottom: 5px;
+  right: -4px;
+}
+.i-rec-pointy-stuff {
+  background-color: #f9f9f9;
+  transform: rotate(-50deg) skew(25deg);
+  bottom: 5px;
+  left: -4px;
+}
+
+.i-chat__time {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+.i-chat__time img {
+  padding: 0 3px;
+}
+.onine {
+  display: block;
+}
+.ur-msg {
+  color: #007aff;
+}
+
+.i-chat__input-section {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.i-chat__input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  position: relative;
+  display: inline;
+  background-color: transparent;
+  font-family: var(--chat-interface-font);
+  resize: none;
+  color: rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+.i-chat__input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+.i-chat__input::-webkit-scrollbar {
+  display: none;
+}
+.i-chat__input--div {
+  width: 200px;
+  position: relative;
+  border-radius: 30px;
+}
+.i-chat__input--img {
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  background-color: #fff;
+}
+
+.iphone-bottom {
+  width: 100%;
+  background-color: #fff;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0rem;
+}
+/*======= END OF IPHONE CHAT UI ====== */
+/* ==================================== */
+
+.iphone.active {
+  display: none;
+}
+
+/* /////////////////////// */
+.android.active {
+  display: none;
+}
+.android {
+  margin: 0 auto;
+  width: 360px;
+  height: 700px;
+  background: #fff;
+  font-family: "open sans", sans-serif;
+}
+.android-header {
+  width: 100%;
+  height: 80px;
+}
+.android-taskbar {
+  padding: 5px;
+  background-color: #054c44;
+  color: #fff;
+}
+.a-battery {
+  fill: #fff;
+}
+.android-network-battery img {
+  margin-right: 0.5rem;
+}
+.android-time {
+  font-weight: 500;
+}
+.android-battery-container {
+  position: relative;
+  width: 24px;
+  height: 11px;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 1px;
+}
+.android-dash {
+  position: absolute;
+  width: 2px;
+  height: 4px;
+  background: black;
+  border-radius: 0 2px 2px 0;
+  right: -5px;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.a-chat__nav {
+  background-color: #075e54;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.back {
+  font-size: 15px;
+}
+
+.a-chat__bubble {
+  width: 80%;
+  border-radius: 10px;
+  padding: 1.2rem 1.2rem 1.7rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin: 1rem 1.5rem;
+  position: relative;
+}
+.name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.a-chat__input--div {
+  justify-items: center;
+  align-items: center;
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 40px;
+  margin-left: 6px;
+}
+
+.icon__div {
+  background-color: white;
+  /* padding: 0 5px; */
+}
+
+.a-my-chat {
+  align-self: flex-end;
+  background-color: #dcf8c7;
+}
+.a-receiver-chat {
+  align-self: flex-start;
+  background-color: #f9f9f9;
+}
+.a-pointy-stuff {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+
+.a-my-pointy-stuff {
+  background-color: #dcf8c6;
+  transform: rotate(120deg) skew(30deg);
+  top: 0px;
+  right: -4px;
+}
+.a-rec-pointy-stuff {
+  background-color: #fff;
+  transform: rotate(-5deg) skew(30deg);
+  top: 0px;
+  left: -5px;
+}
+
+.a-chat__input-section {
+  position: absolute;
+  bottom: 85px;
+  left: 0;
+  right: 0;
+  height: 40px;
+}
+.a-chat__input {
+  border: none;
+  display: inline;
+  background-color: transparent;
+  font-family: var(--chat-interface-font);
+  resize: none;
+  color: rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+.a-chat__input:focus {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.a-chat__input::-webkit-scrollbar {
+  display: none;
+}

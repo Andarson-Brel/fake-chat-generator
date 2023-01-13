@@ -1,0 +1,44 @@
+.d-align {
+  align-items: center;
+}
+.mg-rt {
+  margin: 0 9px;
+}
+.mg-rt-lg {
+  margin: 0 13px;
+}
+.sm-fnt {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+.sm-ft {
+  font-size: 1.2rem;
+  padding: 0 3px;
+  font-weight: 400;
+}
+.mb-sm {
+  margin-bottom: 1rem;
+}
+.mb-md {
+  margin-bottom: 2rem;
+}
+
+.mb-lg {
+  margin-bottom: 3.5rem;
+}
+
+.mb-hg {
+  margin-bottom: 5rem;
+}
+/* button style */
+.android-header {
+  padding: 0;
+}
+.chat {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.chat::-webkit-scrollbar {
+  display: none;
+}

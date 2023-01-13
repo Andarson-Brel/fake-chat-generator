@@ -1,0 +1,124 @@
+.chat-section {
+  background: url(../images/telegram-food.png);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.i-chat__nav {
+  background-color: #fff;
+}
+.sent__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.reply {
+  border-left: 2px solid #007aff;
+  padding: 0 3px;
+}
+.last-seen {
+  padding: 0;
+  text-align: center;
+}
+.i-chat__bubble {
+  background-color: var(--background-color);
+  max-width: 80%;
+  border-radius: 13px;
+  padding: 0.6rem 0.4rem 1.3rem;
+  font-size: 1.4rem;
+  margin: 2px 8px;
+  position: relative;
+}
+.iphone-bottom {
+  width: 100%;
+  background: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+.iphone.active {
+  display: none;
+}
+
+.i-chat__input-section {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.i-chat__input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  position: relative;
+}
+.i-chat__input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+.i-chat__input--div {
+  width: 100%;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  padding: 0 10px;
+  height: 100%;
+  background-color: #fff;
+}
+.i-chat__input--img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.android.active {
+  display: none;
+}
+
+.android {
+  margin: 0 auto;
+  width: 360px;
+  height: 700px;
+  background: #fff;
+}
+.android-header {
+  width: 100%;
+  height: 80px;
+}
+
+.android-taskbar {
+  padding: 5px;
+  background-color: #426382;
+  color: #fff;
+}
+.a-chat__nav {
+  background-color: #517da2;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.a-chat__input:focus {
+  outline: none;
+  border: none;
+}
+.a-chat__input-section {
+  height: 40px;
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  border-radius: 0;
+  background-color: #fff;
+}
+.a-chat__input--div {
+  border-radius: 0;
+  padding: 0 10px;
+}

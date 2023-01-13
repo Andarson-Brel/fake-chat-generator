@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../components/general-interface.css" />
+    <!-- ==================navbar-componentstylesheet======================= -->
+
+    <link rel="stylesheet" href="../components/navbar.css" />
+    <!-- ========================button component stylesheet ============-->
+    <link rel="stylesheet" href="../components/button.css" />
+
+    <!-- typography -->
+    <link rel="stylesheet" href="../components/typography.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/whatsapp.css" />
+  </head>
+  <body>
+    <!-- ===================Begining of navbar====================== -->
+    <header class="header">
+      <nav class="nav d-flex-space-b ninety-percent">
+        <div class="nav-logo">
+          <img src="../images/top-logo.svg" alt="" />
+        </div>
+
+        <ul class="nav-menu d-flex-space-b">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">WhatsApp</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Instagram</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Facebook</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Tiktok</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              >More
+              <img src="../images/more-icon.svg" alt="" class="more-icon" />
+              <ul class="sub-menu">
+                <li>About Us</li>
+                <li>Privacy</li>
+                <li>Contact</li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- =========================End of navbar======================= -->
+    <div class="main-container ninety-percent">
+      <div class="general-interface-container d-flex">
+        <div class="control-panel">
+          <h3 class="control-panel-heading">Chat Generator Setting</h3>
+
+          <div class="control-panel-inputs">
+            <form action="sender-details" class="sender-details">
+              <div class="input-containers">
+                <label for="battery"><h4>Battery Percentage</h4></label>
+                <input type="text" placeholder="50%" />
+              </div>
+
+              <div class="input-containers">
+                <label for="User name"><h4>Direct Message With</h4></label>
+                <input type="text" placeholder="john doe" />
+              </div>
+
+              <div class="input-containers">
+                <label for="status"><h4>Status</h4></label>
+                <input type="text" placeholder="Online" />
+              </div>
+            </form>
+            <form action="" class="sender-profile">
+              <div class="sender-container d-flex-space-a">
+                <div class="profile-photo">
+                  <img src="../images/profile.svg" alt="" />
+                </div>
+                <div class="profile-input">
+                  <h4>Profile Photo</h4>
+                  <button class="active-button">Select Image</button>
+                </div>
+              </div>
+            </form>
+
+            <form action="message-input" class="message">
+              <div class="input-containers">
+                <h4>Message</h4>
+                <textarea
+                  name="message-input"
+                  id="message-input"
+                  cols="30"
+                  rows="4"
+                ></textarea>
+              </div>
+              <button class="active-button">Add Message</button>
+            </form>
+          </div>
+        </div>
+        <div class="preview-section">
+          <div class="preview-header d-flex-space-b">
+            <div class="preview-btn-div">
+              <button class="inactive-button active">iPhone</button>
+              <button class="inactive-button">Android</button>
+            </div>
+            <h2 class="preview-heading">Fake WhatsApp Chat Generatort</h2>
+          </div>
+          <h2 class="preview-title">Preview</h2>
+
+          <div class="device-container">
+            <!-- IPHONE -->
+            <div class="iphone active">
+              <div class="task-bar d-flex-space-b">
+                <img src="../images/Mobile Signal.svg" alt="" />
+                <p class="iphone-time time">12:00</p>
+                <div class="network-wifi d-flex">
+                  <img src="../images/Wifi.svg" alt="" />
+
+                  <div class="battery-container">
+                    <div class="battery-percentage"></div>
+                    <div class="dash"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="i-chat__nav d-flex-space-b">
+                <div class="d-flex">
+                  <div class="d-flex d-align">
+                    <img src="images/iphone-left-icon.svg" alt="" />
+                    <p class="mg-rt ur-msg">12</p>
+                  </div>
+                  <div class="d-flex mg-rt">
+                    <img
+                      class="i-chat__profile-pic"
+                      src="images/profile.svg"
+                      alt=""
+                    />
+                    <p class="d-align mg-rt">
+                      IKEO
+                      <span class="onine sm-fnt">online</span>
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <img src="images/call-icon.svg" alt="" />
+                  <img
+                    class="mg-rt-lg"
+                    src="images/video-call-icon.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="chat-section">
+                <div class="i-chat__timestamp sm-fnt">29 Sep 2020</div>
+                <!-- THE USER CHAT -->
+                <div class="chat">
+                  <div class="i-my-chat i-chat__bubble">
+                    <p>
+                      Hi, there! I would like to ask about my order #1920543.
+                      Your agent mentioned that it would be available on
+                      September 18. However, I haven’t been notified yet by your
+                      company about my product availability. Could you provide
+                      me some news regarding it?
+                    </p>
+                    <span class="sm-fnt i-chat__time"
+                      >11.00 <img src="images/Checkmark-read.svg" alt=""
+                    /></span>
+                    <div class="i-pointy-stuff i-my-pointy-stuff"></div>
+                  </div>
+                  <!-- THE PERSON RECIEVING THE CHAT -->
+                  <div class="i-receiver-chat i-chat__bubble">
+                    <p>
+                      Hi Alexander, we’re sorry to hear that. Could you give us
+                      some time to check on your order first? We will update you
+                      as soon as possible. Thanks!
+                    </p>
+                    <span class="sm-fnt i-chat__time">11.00</span>
+                    <div class="i-pointy-stuff i-rec-pointy-stuff"></div>
+                  </div>
+                  <div class="i-receiver-chat i-chat__bubble">
+                    <p>
+                      Hi Alexander, sorry to make you wait. We’ve checked your
+                      issue ticket numbered #0999 and forwarded your query to
+                      the Production Department. We will keep you updated as
+                      soon as possible. Sorry for the inconvenience
+                    </p>
+                    <span class="sm-fnt i-chat__time">11.00</span>
+                    <div class="i-rec-pointy-stuff i-pointy-stuff"></div>
+                  </div>
+                </div>
+                <div class="d-flex-space-a i-chat__input-section">
+                  <img class="mg-rt" src="/images/whatsapp-plus.svg" alt="" />
+                  <div class="i-chat__input--div">
+                    <textarea
+                      class="i-chat__input"
+                      name="i-input"
+                      id=""
+                      cols="1"
+                      rows="1"
+                    ></textarea>
+                    <img
+                      class="i-chat__input--img"
+                      src="/images/Attachment.svg"
+                      alt=""
+                    />
+                  </div>
+                  <img src="/images/whatsapp-Camera.svg" alt="" />
+                  <img
+                    class="mg-rt"
+                    src="/images/whatsapp=Microphone.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="iphone-bottom">
+                <img src="../images/Home-indicator.svg" alt="" />
+              </div>
+            </div>
+            <!-- ANDROID -->
+            <div class="android">
+              <header class="android-header">
+                <div class="android-taskbar d-flex-space-b">
+                  <div class="android-time time">
+                    <img src="../images/Mobile Signal.svg" alt="" />
+                    <img src="../images/Mobile Signal.svg" alt="" />
+                  </div>
+
+                  <div class="android-network-battery d-flex-space-b">
+                    <span class="sm-ft">50%</span>
+                    <img src="/images/android-battery-white.svg" alt="" />
+                    <span class="sm-ft">10:04 am</span>
+                  </div>
+                </div>
+                <!-- /////// -->
+                <div class="a-chat__nav d-flex-space-b">
+                  <div class="d-flex">
+                    <div class="d-flex d-align">
+                      <img src="/images/telegram-back-icon.svg" alt="" />
+                    </div>
+                    <div class="d-flex mg-rt">
+                      <img
+                        class="i-chat__profile-pic"
+                        src="images/Avatar-icon.svg"
+                        alt=""
+                      />
+                      <p class="name d-align mg-rt">
+                        john doe
+                        <span class="onine sm-ft">online</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="/images/whatsapp-android-header-icon.png.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <!-- ============================================== -->
+              </header>
+              <div class="chat-section">
+                <!-- THE USER CHAT -->
+                <div class="chat">
+                  <div class="a-receiver-chat a-chat__bubble">
+                    <p>
+                      Hello there. Thanks for the follow. Did you notice, that I
+                      am an egg? A talking egg? Damn!
+                    </p>
+                    <span class="sm-fnt i-chat__time">11.00 </span>
+                    <div class="a-pointy-stuff a-rec-pointy-stuff"></div>
+                  </div>
+                  <!-- THE PERSON RECIEVING THE CHAT -->
+                  <div class="a-my-chat a-chat__bubble">
+                    <p>
+                      Yeah that is crazy, but people can change their own
+                      picture and build their own Twitter conversation with this
+                      generator, so it does not matter that you are an egg
+                    </p>
+                    <span class="sm-fnt i-chat__time d-flex"
+                      >11.00<img src="images/Checkmark-read.svg" alt=""
+                    /></span>
+                    <div class="a-pointy-stuff a-my-pointy-stuff"></div>
+                  </div>
+                  <div class="a-receiver-chat a-chat__bubble">
+                    <p>
+                      Thanks mate! Feel way better now. Oh, and guys, these
+                      messages will be removed once your add your own :-)
+                    </p>
+                    <span class="sm-fnt i-chat__time">11.00</span>
+                    <div class="a-rec-pointy-stuff a-pointy-stuff"></div>
+                  </div>
+                </div>
+
+                <div class="d-flex a-chat__input-section">
+                  <div class="a-chat__input--div d-flex">
+                    <img src="/images/emoji-icon.svg" alt="" />
+
+                    <textarea
+                      class="i-chat__input a-chat__input"
+                      name="a-input"
+                      id=""
+                      cols="1"
+                      rows="1"
+                      placeholder="type a message"
+                    ></textarea>
+                    <img src="/images/whatsapp-comment-right-icon.svg" alt="" />
+                  </div>
+                  <img
+                    class="mg-rt"
+                    src="/images/whatsapp-recoder.png.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
