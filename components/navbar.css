@@ -33,6 +33,10 @@ a {
   margin: 0 auto;
 }
 .header {
+  background: var(--background-color);
+  position: fixed;
+  top: 0;
+  z-index: 500;
   width: 100%;
   box-shadow: 0px 4px 20px -7px rgba(0, 0, 0, 0.1);
 }
@@ -79,7 +83,9 @@ a {
 }
 
 /* the main container has the max-width for the general body */
-
+.nav-menu {
+  margin-left: 2rem;
+}
 .nav-item,
 .nav-item a {
   padding: 1rem 1.6rem;
@@ -116,4 +122,120 @@ a {
   background-color: var(--background-color);
   margin-top: 1rem;
   box-shadow: 0px 4px 20px -7px rgba(0, 0, 0, 0.1);
+}
+.nav-menu.active {
+  display: block;
+}
+svg {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+.plate {
+  display: none;
+  height: 50px;
+  width: 50px;
+}
+.burger {
+  filter: url(#gooeyness);
+}
+.x {
+  transform: scale(0);
+  transition: transform 400ms;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: 50%;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms,
+    transform 500ms 200ms;
+}
+.x .line {
+  stroke-width: 5.5px;
+}
+/* First plate */
+.plate1 .line2 {
+  stroke-dasharray: 40 200;
+  stroke-dashoffset: 0px;
+}
+.plate1 .line3 {
+  stroke-dasharray: 40 179;
+  stroke-dashoffset: 0px;
+}
+.active .line {
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+}
+.active.plate1 .line1 {
+  transform: scale(0, 1);
+  transition: transform 500ms 100ms;
+}
+.active.plate1 .line2 {
+  stroke-dasharray: 5px 200;
+  stroke-dashoffset: -164px;
+}
+.active.plate1 .line3 {
+  stroke-dasharray: 5px 179;
+  stroke-dashoffset: -142px;
+}
+.active .x {
+  transform: scale(1);
+  transition: transform 400ms 350ms;
+}
+/* El segundo plato */
+
+.main-container {
+  margin-top: 10rem;
+}
+@media (max-width: 1000px) {
+  .plate {
+    display: inline-block;
+  }
+  .header {
+    padding: 1rem;
+  }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 8rem;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--background-color);
+    transform: translatex(-50%);
+    padding: 2rem 0;
+  }
+  .nav-item {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .nav-item .nav-link:hover .sub-menu {
+    right: 8rem;
+    width: 30%;
+
+    top: -12rem;
+  }
+  .sub-menu li {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .nav-item .nav-link:hover .sub-menu {
+    right: 6rem;
+  }
+}
+@media (max-width: 550px) {
+  .nav-item .nav-link:hover .sub-menu {
+    right: 2rem;
+  }
+}
+@media (max-width: 390px) {
+  .nav-item .nav-link:hover .sub-menu {
+    right: 0;
+  }
 }

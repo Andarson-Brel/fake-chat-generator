@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- ========================favicons================== -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -23,7 +23,7 @@
       href="../images/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>Landing Page</title>
+    <title>Home</title>
 
     <!-- ===========================================link to button component ======================-->
     <link rel="stylesheet" href="components/button.css" />
@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="components/landing-page-layout.css" />
 
     <!-- ========================styles==================================== -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <!-- ===================Begining of navbar====================== -->
@@ -87,6 +87,35 @@
             </a>
           </li>
         </ul>
+        <div class="plate plate1" onclick="this.classList.toggle('active')">
+          <svg
+            class="burger"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line line1" d="M 30,65 H 70" />
+            <path
+              class="line line2"
+              d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"
+            />
+            <path
+              class="line line3"
+              d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"
+            />
+          </svg>
+          <svg
+            class="x"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
+        </div>
       </nav>
     </header>
     <!-- =========================End of navbar======================= -->
@@ -219,5 +248,6 @@
         <button class="active-button">Get Started</button>
       </div>
     </div>
+    <script src="../javascript/navbar.js"></script>
   </body>
 </html>

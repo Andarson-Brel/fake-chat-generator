@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========================favicons================== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Facebook</title>
+    <link rel="stylesheet" href="../components/general-interface.css" />
+
+    <!-- ==================navbar-componentstylesheet======================= -->
+
+    <link rel="stylesheet" href="../components/navbar.css" />
+    <!-- ========================button component stylesheet ============-->
+    <link rel="stylesheet" href="../components/button.css" />
+
+    <!-- typography -->
+    <link rel="stylesheet" href="../components/typography.css" />
+    <!-- ====================facebook============== -->
+    <link rel="stylesheet" href="../css/facebook.css" />
+  </head>
+  <body>
+    <!-- ===================Begining of navbar====================== -->
+    <header class="header">
+      <nav class="nav d-flex-space-b ninety-percent">
+        <div class="nav-logo">
+          <img src="../images/top-logo.svg" alt="" />
+        </div>
+
+        <ul class="nav-menu d-flex-space-b">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">WhatsApp</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Instagram</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Facebook</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Tiktok</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              >More
+              <img src="../images/more-icon.svg" alt="" class="more-icon" />
+              <ul class="sub-menu">
+                <li>About Us</li>
+                <li>Privacy</li>
+                <li>Contact</li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+        <div class="plate plate1" onclick="this.classList.toggle('active')">
+          <svg
+            class="burger"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line line1" d="M 30,65 H 70" />
+            <path
+              class="line line2"
+              d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"
+            />
+            <path
+              class="line line3"
+              d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"
+            />
+          </svg>
+          <svg
+            class="x"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <!-- =========================End of navbar======================= -->
+    <div class="main-container ninety-percent">
+      <div class="general-interface-container d-flex">
+        <div class="control-panel">
+          <h3 class="control-panel-heading">Chat Generator Setting</h3>
+
+          <div class="control-panel-inputs">
+            <form action="sender-details" class="sender-details">
+              <div class="input-containers">
+                <label for="battery"><h4>Battery Percentage</h4></label>
+                <input type="text" placeholder="50%" />
+              </div>
+
+              <div class="input-containers">
+                <label for="User name"><h4>Direct Message With</h4></label>
+                <input type="text" placeholder="john doe" />
+              </div>
+
+              <div class="input-containers">
+                <label for="status"><h4>Status</h4></label>
+                <input type="text" placeholder="Online" />
+              </div>
+            </form>
+            <form action="" class="sender-profile">
+              <div class="sender-container d-flex-space-a">
+                <div class="profile-photo">
+                  <img src="../images/profile.svg" alt="" />
+                </div>
+                <div class="profile-input">
+                  <h4>Profile Photo</h4>
+                  <button class="active-button">Select Image</button>
+                </div>
+              </div>
+            </form>
+
+            <form action="message-input" class="message">
+              <div class="input-containers">
+                <h4>Message</h4>
+                <textarea
+                  name="message-input"
+                  id="message-input"
+                  cols="30"
+                  rows="4"
+                ></textarea>
+              </div>
+              <button class="active-button">Add Message</button>
+            </form>
+          </div>
+        </div>
+        <div class="preview-section">
+          <div class="preview-header d-flex-space-b">
+            <div class="preview-btn-div">
+              <button class="inactive-button active">iPhone</button>
+              <button class="inactive-button">Android</button>
+            </div>
+            <h2 class="preview-heading">Fake WhatsApp Chat Generatort</h2>
+          </div>
+          <h2 class="preview-title">Preview</h2>
+
+          <div class="device-container">
+            <div class="iphone">
+              <header class="mobile-header">
+                <div class="task-bar d-flex-space-b">
+                  <p class="iphone-time time">12:00</p>
+                  <div class="network-wifi d-flex">
+                    <img src="../images/Mobile Signal.svg" alt="" />
+                    <img src="../images/Wifi.svg" alt="" />
+
+                    <div class="battery-container">
+                      <div class="battery-percentage"></div>
+                      <div class="dash"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user-profile d-flex-space-b">
+                  <div class="arrow-profile d-flex-space-b">
+                    <img
+                      src="../images/facebook-left.svg"
+                      alt=""
+                      class="iphone-arrow-left"
+                    />
+                    <div class="user-profile-detail">
+                      <div class="profile-img">
+                        <img src="../images/profile.svg" alt="" />
+                      </div>
+                      <p class="user-name">Daxxie</p>
+                      <img
+                        src="../images/verified.svg"
+                        alt=""
+                        class="verified"
+                      />
+                    </div>
+                  </div>
+                  <div class="navigation-icon">
+                    <img
+                      src="../images/facebook-call.svg"
+                      alt=""
+                      class="call-icon"
+                    />
+                    <img
+                      src="../images/facebook-video.svg"
+                      alt=""
+                      class="vido-call"
+                    />
+                    <img
+                      src="../images/facebook-info.svg"
+                      alt=""
+                      class="flag"
+                    />
+                  </div>
+                </div>
+              </header>
+
+              <div class="chat-section">
+                <div class="chatbox">
+                  <p class="time-date">Jan 12, 2023 09</p>
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        👋 Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>
+                        Oh!😀 Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Fugiat, odio!
+                      </p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
+
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        <img src="img/emoji-1.png" class="emoji" />
+                        Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>Oh! hi 😀</p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
+
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        <img src="img/emoji-1.png" class="emoji" />
+                        Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>Oh! hi 😀</p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
+                </div>
+                <div class="chat-input">
+                  <img
+                    src="../images/facebook-camera.svg"
+                    alt=""
+                    class="facebook-camera"
+                  />
+                  <img
+                    src="../images/facebook-gallery.svg"
+                    alt=""
+                    class="facebook-gallery"
+                  />
+                  <img
+                    src="../images/facebook-mic.svg"
+                    alt=""
+                    class="facebook-mic"
+                  />
+                  <textarea
+                    name="message-input"
+                    id="sender-message-input"
+                    cols="10"
+                    rows="1"
+                    placeholder=""
+                  >
+Aa  </textarea
+                  >
+                  <img
+                    src="../images/facebook-emoji.svg"
+                    alt=""
+                    class="facebook-emoji"
+                  />
+                  <img
+                    src="../images/facebook-like.svg"
+                    alt=""
+                    class="facebook-like"
+                  />
+                </div>
+              </div>
+              <div class="iphone-bottom">
+                <img src="../images/Home-indicator.svg" alt="" />
+              </div>
+            </div>
+            <div class="android active">
+              <header class="mobile-header">
+                <div class="android-tasbar d-flex-space-b">
+                  <div class="android-time time">12:00pm</div>
+
+                  <div class="android-network-battery d-flex-space-b">
+                    <img src="../images/Mobile Signal.svg" alt="" />
+                    <img src="../images/Mobile Signal.svg" alt="" />
+
+                    <div class="android-battery-container">
+                      <div class="battery-percentage"></div>
+                      <div class="android-dash"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user-profile d-flex-space-b">
+                  <div class="arrow-profile d-flex-space-b">
+                    <img
+                      src="../images/arrow-left.svg"
+                      alt=""
+                      class="arrow-left"
+                    />
+                    <div class="user-profile-detail">
+                      <div class="profile-img">
+                        <img src="../images/profile.svg" alt="" />
+                      </div>
+                      <p class="user-name">Daxxie</p>
+                      <img
+                        src="../images/verified.svg"
+                        alt=""
+                        class="verified"
+                      />
+                    </div>
+                  </div>
+                  <div class="navigation-icon">
+                    <img
+                      src="../images/facebook-call.svg"
+                      alt=""
+                      class="call-icon"
+                    />
+                    <img
+                      src="../images/facebook-video.svg"
+                      alt=""
+                      class="vido-call"
+                    />
+                    <img
+                      src="../images/facebook-info.svg"
+                      alt=""
+                      class="flag"
+                    />
+                  </div>
+                </div>
+              </header>
+              <div class="chat-section">
+                <div class="chatbox">
+                  <p class="time-date">Jan 12, 2023 09</p>
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        👋 Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>
+                        Oh!😀 Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Fugiat, odio!
+                      </p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
+
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        <img src="img/emoji-1.png" class="emoji" />
+                        Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>Oh! hi 😀</p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
+
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        <img src="img/emoji-1.png" class="emoji" />
+                        Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>Oh! hi 😀</p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
+                </div>
+                <div class="chat-input">
+                  <img
+                    src="../images/facebook-menu.svg"
+                    alt=""
+                    class="faceboo-more"
+                  />
+                  <img
+                    src="../images/facebook-camera.svg"
+                    alt=""
+                    class="facebook-camera"
+                  />
+                  <img
+                    src="../images/facebook-gallery.svg"
+                    alt=""
+                    class="facebook-gallery"
+                  />
+                  <img
+                    src="../images/facebook-mic.svg"
+                    alt=""
+                    class="facebook-mic"
+                  />
+                  <textarea
+                    name="message-input"
+                    id="sender-message-input"
+                    cols="10"
+                    rows="1"
+                    placeholder=""
+                  >
+Message...  </textarea
+                  >
+                  <img
+                    src="../images/facebook-emoji.svg"
+                    alt=""
+                    class="facebook-emoji"
+                  />
+                  <img
+                    src="../images/facebook-like.svg"
+                    alt=""
+                    class="facebook-like"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/navbar.js"></script>
+  </body>
+</html>

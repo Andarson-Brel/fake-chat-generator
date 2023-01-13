@@ -72,7 +72,7 @@ textarea:focus {
 .preview-title {
   text-align: center;
   color: var(--secondary-color);
-  margin: 3rem;
+  margin: 2rem 3rem;
 }
 .device-container {
   width: 390px;
@@ -83,15 +83,13 @@ textarea:focus {
 .iphone {
   margin: 0 auto;
   width: 375px;
-  height: 810px;
+  height: 890px;
   font-family: var(--chat-interface-font);
   position: relative;
   overflow: hidden;
+  background-color: #fff;
 }
-.task-bar {
-  padding: 16px;
-  background-color: #ffff;
-}
+
 .iphone-time {
   font-weight: 600;
 }
@@ -122,10 +120,20 @@ textarea:focus {
   margin-right: 0.6rem;
 }
 .chat-section {
-  background: url(../images/whatsapp-wallpaper.jpg);
+  /* background: url(../images/whatsapp-wallpaper.jpg); */
   background-size: contain;
   width: 100%;
   height: 100%;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.frend {
+  justify-items: flex-start;
+}
+.me {
+  justify-items: flex-end;
+  text-align: right;
 }
 .iphone-bottom {
   width: 100%;
@@ -135,9 +143,10 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 0;
+  bottom: -1rem;
 }
-.iphone.active {
+.iphone.active,
+.android.active {
   display: none;
 }
 .android {
@@ -146,9 +155,8 @@ textarea:focus {
   height: 700px;
   background: #fff;
 }
-.android-header {
+.mobile-header {
   width: 100%;
-  height: 80px;
   padding: 1.6rem;
 }
 .android-network-battery img {
@@ -174,4 +182,49 @@ textarea:focus {
   right: -5px;
   top: 45%;
   transform: translate(-50%, -50%);
+}
+.user-profile-iphone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+}
+.user-profile-iphone .user-name {
+  font-weight: 800;
+}
+
+/* respobsiveness for all chat interface */
+@media (max-width: 1000px) {
+  .general-interface-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .preview-section {
+    width: 100%;
+  }
+  .control-panel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 670px) {
+  .preview-heading {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .preview-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .preview-heading {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 460px) {
+  .preview-section {
+    padding: 1rem;
+    overflow: auto;
+  }
 }
