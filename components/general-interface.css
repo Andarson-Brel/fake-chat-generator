@@ -201,6 +201,21 @@ textarea:focus {
   position: absolute;
   right: 10%;
 }
+.disclaimer {
+  width: 100%;
+  padding: 2rem;
+  background: #fee2e2;
+  margin: 5rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.disclaimer-icon {
+  margin-bottom: 1rem;
+}
+.dsclaimer-heading {
+  color: #ff0303;
+}
 /* respobsiveness for all chat interface */
 @media (max-width: 1000px) {
   .general-interface-container {
