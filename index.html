@@ -48,43 +48,47 @@
     <header class="header">
       <nav class="nav d-flex-space-b ninety-percent">
         <div class="nav-logo">
-          <img src="../images/top-logo.svg" alt="" />
+          <a href="../index.html"
+            ><img src="../images/top-logo.svg" alt="" />
+          </a>
         </div>
 
-        <ul class="nav-menu d-flex-space-b">
+        <ul class="nav-menu d-flex-gap">
           <li class="nav-item">
-            <a href="#" class="nav-link active">Home</a>
+            <a href="../index.html" class="nav-link active">Home</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">WhatsApp</a>
+            <a href="pages/whatsapp.html" class="nav-link">WhatsApp</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Instagram</a>
+            <a href="pages/instagram.html" class="nav-link">Instagram</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Facebook</a>
+            <a href="pages/facebook.html" class="nav-link">Facebook</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Tiktok</a>
+            <a href="pages/telegram.html" class="nav-link">Telegram</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Twitter</a>
+            <a href="pages/twitter.html" class="nav-link">Twitter</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"
-              >More
-              <img src="../images/more-icon.svg" alt="" class="more-icon" />
-              <ul class="sub-menu">
-                <li>About Us</li>
-                <li>Privacy</li>
-                <li>Contact</li>
-              </ul>
-            </a>
+
+          <li class="nav-item more-btn">
+            More
+            <img src="../images/more-icon.svg" alt="" class="more-icon" />
+            <ul class="sub-menu">
+              <li><a href="pages/snapchat.html">Snapchat</a></li>
+              <li><a href="pages/about.html"> About</a></li>
+
+              <li><a href="pages/privacy.html"> Privacy</a></li>
+
+              <li><a href=""> Contact</a></li>
+            </ul>
           </li>
         </ul>
         <div class="plate plate1" onclick="this.classList.toggle('active')">
@@ -133,7 +137,9 @@
               and timestamps, you can create a convincing chat that looks just
               like the real thing.
             </p>
-            <button class="active-button">Generate WhatsApp Chat</button>
+            <a href="pages/interface-card.html">
+              <button class="active-button">Get Started</button></a
+            >
           </div>
           <div class="layout-container--img">
             <img src="../images/hero-illustrator.svg" alt="" />
@@ -169,7 +175,9 @@
                 and timestamps, you can create a convincing chat that looks just
                 like the real thing.
               </p>
-              <button class="inactive-button">Generate WhatsApp Chat</button>
+              <a href="pages/whatsapp.html">
+                <button class="active-button">Generate WhatsApp Chat</button></a
+              >
             </div>
           </div>
         </div>
@@ -184,7 +192,9 @@
                 you to create authentic-looking conversations that will fool
                 even the most savvy of users.
               </p>
-              <button class="active-button">Generate Twitter Chat</button>
+              <a href="pages/twitter.html">
+                <button class="active-button">Generate Twitter Chat</button></a
+              >
             </div>
             <div class="layout-container--img">
               <img src="../images/twitter-illustration.svg" alt="" />
@@ -205,7 +215,11 @@
                 allows you to generate realistic and convincing fake chats that
                 will have your friends and followers convinced they're real.
               </p>
-              <button class="inactive-button">Generate Instagram Chat</button>
+              <a href="pages/instagram.html">
+                <button class="active-button">
+                  Generate Instagram Chat
+                </button></a
+              >
             </div>
           </div>
         </div>
@@ -223,7 +237,9 @@
                 conversations that will have your followers convinced they're
                 real.
               </p>
-              <button class="active-button">Generate Facebook Chat</button>
+              <a href="pages/facebook.html">
+                <button class="active-button">Generate Facebook Chat</button></a
+              >
             </div>
             <div class="layout-container--img">
               <img src="../images/facebook-illustration.svg" alt="" />
@@ -245,9 +261,22 @@
           posts, the Fake Facebook Chat feature is a must-have. Try it out now
           and see just how convincing your fake chats can be!
         </p>
-        <button class="active-button">Get Started</button>
+        <a href="pages/interface-card.html">
+          <button class="active-button">Get Started</button></a
+        >
       </div>
     </div>
+    <footer class="footer">
+      <div class="ninety-percent d-flex-space-b">
+        <a href="../index.html" class="logo"
+          ><img src="../images/top-logo.svg" alt="" class="footer-logo"
+        /></a>
+
+        <a href="https://github.com/Andarson-Brel/fake-chat-generator"
+          ><img src="../images/github-logo.svg" alt="" class="github"
+        /></a>
+      </div>
+    </footer>
     <script src="../javascript/navbar.js"></script>
   </body>
 </html>

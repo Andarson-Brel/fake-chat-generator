@@ -5,27 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- ========================favicons================== -->
-<link
-rel="apple-touch-icon"
-sizes="180x180"
-href="../images/apple-touch-icon.png"
-/>
-<link
-rel="icon"
-type="image/png"
-sizes="32x32"
-href="../images/favicon-32x32.png"
-/>
-<link
-rel="icon"
-type="image/png"
-sizes="16x16"
-href="../images/favicon-16x16.png"
-/>
-<link rel="manifest" href="/site.webmanifest" />
-
-
+    <!-- ========================favicons================== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <title>Twitter</title>
     <link rel="stylesheet" href="../components/general-interface.css" />
@@ -46,43 +44,47 @@ href="../images/favicon-16x16.png"
     <header class="header">
       <nav class="nav d-flex-space-b ninety-percent">
         <div class="nav-logo">
-          <img src="../images/top-logo.svg" alt="" />
+          <a href="../index.html"
+            ><img src="../images/top-logo.svg" alt="" />
+          </a>
         </div>
 
-        <ul class="nav-menu d-flex-space-b">
+        <ul class="nav-menu d-flex-gap">
           <li class="nav-item">
-            <a href="#" class="nav-link ">Home</a>
+            <a href="../index.html" class="nav-link">Home</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">WhatsApp</a>
+            <a href="../pages/whatsapp.html" class="nav-link">WhatsApp</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Instagram</a>
+            <a href="../pages/instagram.html" class="nav-link">Instagram</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Facebook</a>
+            <a href="../pages/facebook.html" class="nav-link">Facebook</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Tiktok</a>
+            <a href="../pages/telegram.html" class="nav-link">Telegram</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link active">Twitter</a>
+            <a href="../pages/twitter.html" class="nav-link active">Twitter</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"
-              >More
-              <img src="../images/more-icon.svg" alt="" class="more-icon" />
-              <ul class="sub-menu">
-                <li>About Us</li>
-                <li>Privacy</li>
-                <li>Contact</li>
-              </ul>
-            </a>
+
+          <li class="nav-item more-btn">
+            More
+            <img src="../images/more-icon.svg" alt="" class="more-icon" />
+            <ul class="sub-menu">
+              <li><a href="../pages/snapchat.html">Snapchat</a></li>
+              <li><a href="../pages/about.html"> About</a></li>
+
+              <li><a href="../pages/privacy.html"> Privacy</a></li>
+
+              <li><a href="../pages/contact.html"> Contact</a></li>
+            </ul>
           </li>
         </ul>
         <div class="plate plate1" onclick="this.classList.toggle('active')">
@@ -171,142 +173,142 @@ href="../images/favicon-16x16.png"
               <button class="inactive-button active">iPhone</button>
               <button class="inactive-button">Android</button>
             </div>
-            <h2 class="preview-heading">Fake WhatsApp Chat Generatort</h2>
+            <h2 class="preview-heading">Generate Fake Twitter chat</h2>
           </div>
           <h2 class="preview-title">Preview</h2>
 
           <div class="device-container">
-            <div class="iphone ">
+            <div class="iphone">
               <header class="mobile-header">
-              <div class="task-bar d-flex-space-b">
-                <p class="iphone-time time">12:00</p>
-                <div class="network-wifi d-flex">
-                  <img src="../images/Mobile Signal.svg" alt="" />
-                  <img src="../images/Wifi.svg" alt="" />
+                <div class="task-bar d-flex-space-b">
+                  <p class="iphone-time time">12:00</p>
+                  <div class="network-wifi d-flex">
+                    <img src="../images/Mobile Signal.svg" alt="" />
+                    <img src="../images/Wifi.svg" alt="" />
 
-                  <div class="battery-container">
-                    <div class="battery-percentage"></div>
-                    <div class="dash"></div>
+                    <div class="battery-container">
+                      <div class="battery-percentage"></div>
+                      <div class="dash"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="user-profile d-flex-space-b">
-                <div class="arrow-profile d-flex-space-b">
+                <div class="user-profile d-flex-space-b">
+                  <div class="arrow-profile d-flex-space-b">
+                    <img
+                      src="../images/arrow-left.svg"
+                      alt=""
+                      class="arrow-left"
+                    />
+                    <div class="user-profile-iphone">
+                      <div class="profile-img">
+                        <img src="../images/profile.svg" alt="" />
+                      </div>
+                      <p class="user-name">Daxxie</p>
+                    </div>
+                  </div>
+
                   <img
-                    src="../images/arrow-left.svg"
+                    src="../images/twitter-message-icons.png.svg"
                     alt=""
-                    class="arrow-left"
+                    class="more-icon"
                   />
-                  <div class="user-profile-iphone">
-                  <div class="profile-img">
-                    <img src="../images/profile.svg" alt="" />
+                </div>
+              </header>
+              <div class="chat-section">
+                <div class="chatbox">
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        👋 Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                      <p class="message-time-r">12:00 PM</p>
+                    </div>
                   </div>
-                  <p class="user-name">Daxxie</p>
-                </div>
-                </div>
 
-                <img
-                  src="../images/twitter-message-icons.png.svg"
-                  alt=""
-                  class="more-icon"
-                />
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>
+                        Oh!😀 Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Fugiat, odio!
+                      </p>
+                      <p class="message-time-l">12:00 PM</p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
+
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        <img src="img/emoji-1.png" class="emoji" />
+                        Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                      <p class="message-time-r">12:00 PM</p>
+                    </div>
+                  </div>
+
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>Oh! hi 😀</p>
+                      <p class="message-time-l">12:00 PM</p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
+
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        <img src="img/emoji-1.png" class="emoji" />
+                        Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                      <p class="message-time-r">12:00 PM</p>
+                    </div>
+                  </div>
+
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>Oh! hi 😀</p>
+                      <p class="message-time-l">12:00 PM</p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
+                </div>
+                <div class="chat-input">
+                  <img
+                    src="../images/twitter-gallery.svg"
+                    alt=""
+                    class="img-gallery"
+                  />
+                  <img
+                    src="../images/twitter-gif.svg"
+                    alt=""
+                    class="twitter-gif"
+                  />
+
+                  <textarea
+                    name="message-input"
+                    id="sender-message-input"
+                    cols="10"
+                    rows="1"
+                    placeholder=""
+                  >
+Start a message</textarea
+                  >
+                  <img
+                    src="../images/twiter-vn.svg"
+                    alt=""
+                    class="twitter-vn"
+                  />
+                </div>
               </div>
-</header>
-<div class="chat-section">
-  <div class="chatbox">
- 
-
-   <div class="chat-r">
-<div class="sp"></div>
-<div class="mess mess-r">
-<p>👋
-               Hi, Elias Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eveniet excepturi odio facilis vel sit neque blanditiis molestias a animi.
-</p>
-<p class="message-time-r">12:00 PM</p>
-</div>
-</div>
-
-
-
-   <div class="chat-l">
-<div class="mess mess-l">
-<p>
-               Oh!😀
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, odio!
-</p>
-<p class="message-time-l">12:00 PM</p>
-</div>
-<div class="sp"></div>
-</div>
- 
-
-
-   <div class="chat-r">
-<div class="sp"></div>
-<div class="mess mess-r">
-<p><img src="img/emoji-1.png" class="emoji">
-               Hi, Elias Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eveniet excepturi odio facilis vel sit neque blanditiis molestias a animi.
-</p>
-<p class="message-time-r">12:00 PM</p>
-</div>
-</div>
-
-
-
-   <div class="chat-l">
-<div class="mess mess-l">
-<p>
-               Oh! hi 😀
-</p>
-<p class="message-time-l">12:00 PM</p>
-</div>
-<div class="sp"></div>
-</div>
-
-
-   <div class="chat-r">
-<div class="sp"></div>
-<div class="mess mess-r">
-<p><img src="img/emoji-1.png" class="emoji">
-               Hi, Elias Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eveniet excepturi odio facilis vel sit neque blanditiis molestias a animi.
-</p>
-<p class="message-time-r">12:00 PM</p>
-</div>
-</div>
-
-
-
-   <div class="chat-l">
-<div class="mess mess-l">
-<p>
-               Oh! hi 😀
-</p>
-<p class="message-time-l">12:00 PM</p>
-</div>
-<div class="sp"></div>
-</div>
-
-
-  
-
-
-
-
-
- 
-   
- 
-
-  
-</div>
-<div class="chat-input">
-   <img src="../images/twitter-gallery.svg" alt="" class="img-gallery">
-   <img src="../images/twitter-gif.svg" alt="" class="twitter-gif">
-
-   <textarea name="message-input" id="sender-message-input" cols="10" rows="1" placeholder="">Start a message</textarea>
-   <img src="../images/twiter-vn.svg" alt="" class="twitter-vn">
-</div>
-</div>
               <div class="iphone-bottom">
                 <img src="../images/Home-indicator.svg" alt="" />
               </div>
@@ -348,104 +350,116 @@ href="../images/favicon-16x16.png"
                 </div>
               </header>
               <div class="chat-section">
-               <div class="chatbox">
-              
+                <div class="chatbox">
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        👋 Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                      <p class="message-time-r">12:00 PM</p>
+                    </div>
+                  </div>
 
-                <div class="chat-r">
-					<div class="sp"></div>
-					<div class="mess mess-r">
-						<p>👋
-                            Hi, Elias Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eveniet excepturi odio facilis vel sit neque blanditiis molestias a animi.
-						</p>
-						<p class="message-time-r">12:00 PM</p>
-					</div>
-				</div>
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>
+                        Oh!😀 Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Fugiat, odio!
+                      </p>
+                      <p class="message-time-l">12:00 PM</p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
 
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        <img src="img/emoji-1.png" class="emoji" />
+                        Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                      <p class="message-time-r">12:00 PM</p>
+                    </div>
+                  </div>
 
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>Oh! hi 😀</p>
+                      <p class="message-time-l">12:00 PM</p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
 
-                <div class="chat-l">
-					<div class="mess mess-l">
-						<p>
-                            Oh!😀
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, odio!
-						</p>
-						<p class="message-time-l">12:00 PM</p>
-					</div>
-					<div class="sp"></div>
-				</div>
-              
+                  <div class="chat-r">
+                    <div class="sp"></div>
+                    <div class="mess mess-r">
+                      <p>
+                        <img src="img/emoji-1.png" class="emoji" />
+                        Hi, Elias Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Doloremque eveniet excepturi odio
+                        facilis vel sit neque blanditiis molestias a animi.
+                      </p>
+                      <p class="message-time-r">12:00 PM</p>
+                    </div>
+                  </div>
 
+                  <div class="chat-l">
+                    <div class="mess mess-l">
+                      <p>Oh! hi 😀</p>
+                      <p class="message-time-l">12:00 PM</p>
+                    </div>
+                    <div class="sp"></div>
+                  </div>
+                </div>
+                <div class="chat-input">
+                  <img
+                    src="../images/twitter-gallery.svg"
+                    alt=""
+                    class="img-gallery"
+                  />
+                  <img
+                    src="../images/twitter-gif.svg"
+                    alt=""
+                    class="twitter-gif"
+                  />
 
-                <div class="chat-r">
-					<div class="sp"></div>
-					<div class="mess mess-r">
-						<p><img src="img/emoji-1.png" class="emoji">
-                            Hi, Elias Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eveniet excepturi odio facilis vel sit neque blanditiis molestias a animi.
-						</p>
-						<p class="message-time-r">12:00 PM</p>
-					</div>
-				</div>
-
-
-
-                <div class="chat-l">
-					<div class="mess mess-l">
-						<p>
-                            Oh! hi 😀
-						</p>
-						<p class="message-time-l">12:00 PM</p>
-					</div>
-					<div class="sp"></div>
-				</div>
-
-
-                <div class="chat-r">
-					<div class="sp"></div>
-					<div class="mess mess-r">
-						<p><img src="img/emoji-1.png" class="emoji">
-                            Hi, Elias Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eveniet excepturi odio facilis vel sit neque blanditiis molestias a animi.
-						</p>
-						<p class="message-time-r">12:00 PM</p>
-					</div>
-				</div>
-
-
-
-                <div class="chat-l">
-					<div class="mess mess-l">
-						<p>
-                            Oh! hi 😀
-						</p>
-						<p class="message-time-l">12:00 PM</p>
-					</div>
-					<div class="sp"></div>
-				</div>
-
-
-               
-
-
-
-
-
-              
-                
-              
-
-               
-            </div>
-            <div class="chat-input">
-                <img src="../images/twitter-gallery.svg" alt="" class="img-gallery">
-                <img src="../images/twitter-gif.svg" alt="" class="twitter-gif">
-
-                <textarea name="message-input" id="sender-message-input" cols="10" rows="1" placeholder="">Start a message</textarea>
-                <img src="../images/twiter-vn.svg" alt="" class="twitter-vn">
+                  <textarea
+                    name="message-input"
+                    id="sender-message-input"
+                    cols="10"
+                    rows="1"
+                    placeholder=""
+                  >
+Start a message</textarea
+                  >
+                  <img
+                    src="../images/twiter-vn.svg"
+                    alt=""
+                    class="twitter-vn"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="ninety-percent d-flex-space-b">
+        <a href="../index.html" class="logo"
+          ><img src="../images/top-logo.svg" alt="" class="footer-logo"
+        /></a>
 
+        <a href="https://github.com/Andarson-Brel/fake-chat-generator"
+          ><img src="../images/github-logo.svg" alt="" class="github"
+        /></a>
+      </div>
+    </footer>
     <script src="../javascript/navbar.js"></script>
   </body>
 </html>

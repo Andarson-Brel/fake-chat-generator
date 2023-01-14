@@ -45,6 +45,11 @@ a {
 .d-flex {
   display: flex;
 }
+.d-flex-gap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .d-flex-space-b {
   display: flex;
   justify-content: space-between;
@@ -83,9 +88,7 @@ a {
 }
 
 /* the main container has the max-width for the general body */
-.nav-menu {
-  margin-left: 2rem;
-}
+
 .nav-item,
 .nav-item a {
   padding: 1rem 1.6rem;
@@ -105,7 +108,16 @@ a {
 }
 .sub-menu {
   display: none;
-  width: 80%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  background-color: var(--background-color);
+  margin-top: 1rem;
+  box-shadow: 0px 4px 20px -7px rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem;
+}
+.sub-menu.active {
+  display: block;
 }
 .sub-menu li {
   margin-top: 1.6rem;
@@ -116,13 +128,7 @@ a {
   background-color: var(--primary-color);
   color: var(--background-color);
 }
-.nav-item .nav-link:hover .sub-menu {
-  display: block;
-  position: absolute;
-  background-color: var(--background-color);
-  margin-top: 1rem;
-  box-shadow: 0px 4px 20px -7px rgba(0, 0, 0, 0.1);
-}
+
 .nav-menu.active {
   display: block;
 }
@@ -190,6 +196,28 @@ svg {
 .main-container {
   margin-top: 10rem;
 }
+.more-btn {
+  cursor: pointer;
+}
+.sub-menu li:hover {
+  background: var(--primary-color);
+  color: var(--background-color);
+}
+.sub-menu li a:hover {
+  color: var(--background-color);
+}
+.sub-menu.mobile {
+  position: absolute;
+  display: block;
+  right: 0;
+  width: 30%;
+
+  top: -12rem;
+}
+.footer {
+  padding: 1rem 0;
+  background: var(--secondary-color-light);
+}
 @media (max-width: 1000px) {
   .plate {
     display: inline-block;
@@ -217,9 +245,8 @@ svg {
   .nav-item .nav-link:hover .sub-menu {
     right: 8rem;
     width: 30%;
-
-    top: -12rem;
   }
+
   .sub-menu li {
     font-size: 2rem;
   }

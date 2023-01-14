@@ -4,7 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- ========================favicons================== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Telegram</title>
     <link rel="stylesheet" href="../components/general-interface.css" />
 
     <!-- ==================navbar-componentstylesheet======================= -->
@@ -24,45 +45,80 @@
     <header class="header">
       <nav class="nav d-flex-space-b ninety-percent">
         <div class="nav-logo">
-          <img src="../images/top-logo.svg" alt="" />
+          <a href="../index.html"
+            ><img src="../images/top-logo.svg" alt="" />
+          </a>
         </div>
 
-        <ul class="nav-menu d-flex-space-b">
+        <ul class="nav-menu d-flex-gap">
           <li class="nav-item">
-            <a href="#" class="nav-link active">Home</a>
+            <a href="../index.html" class="nav-link">Home</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">WhatsApp</a>
+            <a href="../pages/whatsapp.html" class="nav-link">WhatsApp</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Instagram</a>
+            <a href="../pages/instagram.html" class="nav-link">Instagram</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Facebook</a>
+            <a href="../pages/facebook.html" class="nav-link">Facebook</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Tiktok</a>
+            <a href="../pages/telegram.html" class="nav-link active"
+              >Telegram</a
+            >
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">Twitter</a>
+            <a href="../pages/twitter.html" class="nav-link">Twitter</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"
-              >More
-              <img src="../images/more-icon.svg" alt="" class="more-icon" />
-              <ul class="sub-menu">
-                <li>About Us</li>
-                <li>Privacy</li>
-                <li>Contact</li>
-              </ul>
-            </a>
+
+          <li class="nav-item more-btn">
+            More
+            <img src="../images/more-icon.svg" alt="" class="more-icon" />
+            <ul class="sub-menu">
+              <li><a href="../pages/snapchat.html">Snapchat</a></li>
+              <li><a href="../pages/about.html"> About</a></li>
+
+              <li><a href="../pages/privacy.html"> Privacy</a></li>
+
+              <li><a href="../pages/contact.html"> Contact</a></li>
+            </ul>
           </li>
         </ul>
+        <div class="plate plate1" onclick="this.classList.toggle('active')">
+          <svg
+            class="burger"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line line1" d="M 30,65 H 70" />
+            <path
+              class="line line2"
+              d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"
+            />
+            <path
+              class="line line3"
+              d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"
+            />
+          </svg>
+          <svg
+            class="x"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
+        </div>
       </nav>
     </header>
     <!-- =========================End of navbar======================= -->
@@ -120,7 +176,7 @@
               <button class="inactive-button active">iPhone</button>
               <button class="inactive-button">Android</button>
             </div>
-            <h2 class="preview-heading">Fake Telegram Chat Generator</h2>
+            <h2 class="preview-heading">Generate Fake Telegram Chat</h2>
           </div>
           <h2 class="preview-title">Preview</h2>
 
@@ -375,5 +431,17 @@
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="ninety-percent d-flex-space-b">
+        <a href="../index.html" class="logo"
+          ><img src="../images/top-logo.svg" alt="" class="footer-logo"
+        /></a>
+
+        <a href="https://github.com/Andarson-Brel/fake-chat-generator"
+          ><img src="../images/github-logo.svg" alt="" class="github"
+        /></a>
+      </div>
+    </footer>
+    <script src="../javascript/navbar.js"></script>
   </body>
 </html>

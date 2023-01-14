@@ -14,7 +14,7 @@ textarea:focus {
   outline: 1px solid var(--secondary-color);
 }
 .general-interface-container {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem;
 }
 .control-panel {
   width: 360px;
@@ -193,7 +193,14 @@ textarea:focus {
 .user-profile-iphone .user-name {
   font-weight: 800;
 }
-
+.move-btn {
+  width: 80%;
+}
+.btn-container {
+  width: 50%;
+  position: absolute;
+  right: 10%;
+}
 /* respobsiveness for all chat interface */
 @media (max-width: 1000px) {
   .general-interface-container {
@@ -220,6 +227,10 @@ textarea:focus {
   }
   .preview-heading {
     margin-top: 1rem;
+  }
+  .btn-container {
+    width: 80%;
+    right: 5%;
   }
 }
 @media (max-width: 460px) {

@@ -1,0 +1,10 @@
+.about-container {
+  padding: 2rem;
+}
+.about-heading {
+  text-align: center;
+  border-bottom: 2px solid var(--secondary-color);
+}
+.about {
+  margin-top: 2rem;
+}
