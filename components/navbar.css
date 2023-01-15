@@ -260,6 +260,9 @@ svg {
   .nav-item .nav-link:hover .sub-menu {
     right: 2rem;
   }
+  html {
+    font-size: 8px;
+  }
 }
 @media (max-width: 390px) {
   .nav-item .nav-link:hover .sub-menu {
