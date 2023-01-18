@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="../css/utilities.css" />
     <link rel="stylesheet" href="../css/whatsapp.css" />
   </head>
-  <body>
+  <body onload="autoClick();">
     <!-- ===================Begining of navbar====================== -->
     <header class="header">
       <nav class="nav d-flex-space-b ninety-percent">
@@ -129,27 +129,39 @@
             <form action="sender-details" class="sender-details">
               <div class="input-containers">
                 <label for="battery"><h4>Battery Percentage</h4></label>
-                <input type="text" placeholder="50%" />
+                <input type="text" placeholder="50%" class="battery-input" />
               </div>
 
               <div class="input-containers">
                 <label for="User name"><h4>Direct Message With</h4></label>
-                <input type="text" placeholder="john doe" />
+                <input
+                  type="text"
+                  placeholder="john doe"
+                  class="username-input"
+                />
               </div>
 
               <div class="input-containers">
                 <label for="status"><h4>Status</h4></label>
-                <input type="text" placeholder="Online" />
+                <input type="text" placeholder="Online" class="status-input" />
               </div>
             </form>
             <form action="" class="sender-profile">
               <div class="sender-container d-flex-space-a">
-                <div class="profile-photo">
+                <div class="profile-photo profile-img">
                   <img src="../images/profile.svg" alt="" />
                 </div>
                 <div class="profile-input">
                   <h4>Profile Photo</h4>
-                  <button class="active-button">Select Image</button>
+                  <input
+                    type="file"
+                    accept="images/*"
+                    class="upload-img"
+                    id="upload-img-btn"
+                  />
+                  <label for="upload-img-btn" class="active-button"
+                    >Select Image</label
+                  >
                 </div>
               </div>
             </form>
@@ -174,8 +186,8 @@
         <div class="preview-section">
           <div class="preview-header d-flex-space-b">
             <div class="preview-btn-div">
-              <button class="inactive-button active">iPhone</button>
-              <button class="inactive-button">Android</button>
+              <button class="inactive-button switch active">iPhone</button>
+              <button class="inactive-button switch">Android</button>
             </div>
             <h2 class="preview-heading">Generate Fake WhatsApp chat</h2>
           </div>
@@ -183,10 +195,10 @@
 
           <div class="device-container">
             <!-- IPHONE -->
-            <div class="iphone">
+            <div class="iphone device active htmlContent">
               <div class="task-bar d-flex-space-b">
                 <img src="../images/Mobile Signal.svg" alt="" />
-                <p class="iphone-time time">12:00</p>
+                <p class="iphone-time local-time">12:00</p>
                 <div class="network-wifi d-flex">
                   <img src="../images/Wifi.svg" alt="" />
 
@@ -199,24 +211,27 @@
               <div class="i-chat__nav d-flex-space-b">
                 <div class="d-flex">
                   <div class="d-flex d-align">
-                    <img src="/images/iphone-left-icon.svg" alt="" />
+                    <img src="../images/iphone-left-icon.svg" alt="" />
                     <p class="mg-rt ur-msg">12</p>
                   </div>
-                  <div class="d-flex mg-rt">
-                    <img
-                      class="i-chat__profile-pic"
-                      src="/images/profile.svg"
-                      alt=""
-                    />
-                    <p class="d-align mg-rt">
-                      IKEO
-                      <span class="onine sm-fnt">online</span>
-                    </p>
+                  <div class="d-flex mg-rt user-profile-photo">
+                    <div class="i-chat__profile-pic profile-photo">
+                      <img src="../images/profile.svg" alt="" />
+                    </div>
+
+                    <div class="username-status">
+                      <p class="d-align username">IKEO</p>
+                      <p class="status sm-fnt">online</p>
+                    </div>
                   </div>
                 </div>
                 <div>
-                  <img src="images/call-icon.svg" alt="" />
-                  <img class="mg-rt-lg" src="/images/arrow-left.svg" alt="" />
+                  <img src="../images/call-icon.svg" alt="" />
+                  <img
+                    class="mg-rt-lg"
+                    src="../images/video-call-icon.svg"
+                    alt=""
+                  />
                 </div>
               </div>
 
@@ -287,36 +302,35 @@
               </div>
             </div>
             <!-- ANDROID -->
-            <div class="android active">
+            <div class="android device">
               <header class="android-header">
                 <div class="android-taskbar d-flex-space-b">
-                  <div class="android-time time">
+                  <div class="android-time local-time">
                     <img src="../images/Mobile Signal.svg" alt="" />
                     <img src="../images/Mobile Signal.svg" alt="" />
                   </div>
 
                   <div class="android-network-battery d-flex-space-b">
-                    <span class="sm-ft">50%</span>
-                    <img src="/images/android-battery-white.svg" alt="" />
-                    <span class="sm-ft">10:04 am</span>
+                    <div class="android-battery-container">
+                      <div class="battery-percentage android-battery"></div>
+                      <div class="android-dash"></div>
+                    </div>
                   </div>
                 </div>
                 <!-- /////// -->
                 <div class="a-chat__nav d-flex-space-b">
                   <div class="d-flex">
                     <div class="d-flex d-align">
-                      <img src="/images/telegram-back-icon.svg" alt="" />
+                      <img src="../images/telegram-back-icon.svg" alt="" />
                     </div>
                     <div class="d-flex mg-rt">
-                      <img
-                        class="i-chat__profile-pic"
-                        src="images/Avatar-icon.svg"
-                        alt=""
-                      />
-                      <p class="name d-align mg-rt">
-                        john doe
-                        <span class="onine sm-ft">online</span>
-                      </p>
+                      <div class="i-chat__profile-pic profile-photo">
+                        <img class="" src="../images/profile.svg" alt="" />
+                      </div>
+                      <div class="username-status name">
+                        <p class="d-align username">IKEO</p>
+                        <p class="status sm-fnt whatsappname">online</p>
+                      </div>
                     </div>
                   </div>
                   <div>
@@ -391,7 +405,9 @@
         </div>
       </div>
       <div class="btn-container">
-        <button class="inactive-button move-btn">Download Chat as Image</button>
+        <a class="inactive-button move-btn" id="download">
+          Download Chat as Image
+        </a>
       </div>
 
       <div class="disclaimer">
@@ -420,8 +436,11 @@
         /></a>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+
+    <script src="../javascript/download.js"></script>
     <script src="../javascript/navbar.js"></script>
-    <script src="../javascript/chats.js"></script>
-    <script src="../javascript/whatsapp.js"></script>
+    <script src="../javascript/control-panel.js"></script>
   </body>
 </html>
