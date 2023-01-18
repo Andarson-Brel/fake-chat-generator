@@ -89,10 +89,16 @@ tabBtn.forEach((tab, index) => {
       content.classList.remove("active");
       content.classList.remove("htmlContent");
     });
+
     tabs[index].classList.add("active");
     tabs[index].classList.add("htmlContent");
+
     function autoClick() {
       $("#download").click();
     }
+    recBtns.forEach((btn) => {
+      btn.classList.add("active");
+    });
+    recBtns[index].classList.remove("active");
   });
 });

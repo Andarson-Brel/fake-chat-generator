@@ -99,7 +99,7 @@
 
 .i-chat__input-section {
   position: absolute;
-  bottom: 100px;
+  bottom: 120px;
   left: 0;
   right: 0;
   background-color: #fff;
@@ -271,7 +271,7 @@
 
 .a-chat__input-section {
   position: absolute;
-  bottom: 85px;
+  bottom: 110px;
   left: 0;
   right: 0;
   height: 40px;
