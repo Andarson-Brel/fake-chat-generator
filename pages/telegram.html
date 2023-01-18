@@ -166,15 +166,18 @@
                   rows="4"
                 ></textarea>
               </div>
-              <button class="active-button">Add Message</button>
+              <button class="i-rec-btn active-button">Add Message</button>
+              <button class="a-rec-btn active active-button">
+                Add Message
+              </button>
             </form>
           </div>
         </div>
         <div class="preview-section">
           <div class="preview-header d-flex-space-b">
             <div class="preview-btn-div">
-              <button class="inactive-button active">iPhone</button>
-              <button class="inactive-button">Android</button>
+              <button class="inactive-button">iPhone</button>
+              <button class="inactive-button active">Android</button>
             </div>
             <h2 class="preview-heading">Generate Fake Telegram Chat</h2>
           </div>
@@ -213,7 +216,7 @@
 
               <div class="chat-section">
                 <!-- THE USER CHAT -->
-                <div class="chat">
+                <div class="i-chat">
                   <div class="i-my-chat i-chat__bubble">
                     <p>Japan looks amazing!</p>
                     <span class="sm-ft i-chat__time">10:10</span>
@@ -300,7 +303,7 @@
                   />
                   <div class="i-chat__input--div">
                     <textarea
-                      class="i-chat__input"
+                      class="i-chat__input i-inp"
                       name="i-input"
                       id=""
                       cols="1"
@@ -317,6 +320,11 @@
                   <img
                     class="t-rec mg-rt"
                     src="/images/telegram-Record.svg"
+                    alt=""
+                  />
+                  <img
+                    class="i-send-btn"
+                    src="/images/arrow-right.svg"
                     alt=""
                   />
                 </div>
@@ -366,7 +374,7 @@
               </header>
               <div class="chat-section">
                 <!-- THE USER CHAT -->
-                <div class="chat">
+                <div class="a-chat">
                   <div class="a-receiver-chat a-chat__bubble">
                     <p>
                       Hello there. Thanks for the follow. Did you notice, that I
@@ -408,7 +416,7 @@
                     <!-- </div> -->
 
                     <textarea
-                      class="i-chat__input a-chat__input mg-rt"
+                      class="i-chat__input a-chat__input mg-rt a-inp"
                       name="a-input"
                       id=""
                       cols="1"
@@ -418,8 +426,13 @@
 
                     <!-- <div class="d-flex icon__div"> -->
                     <img
-                      class="a-chat__input--img"
+                      class="a-chat__input--img inp-img"
                       src="/images/telegram-android-footer-icon.svg"
+                      alt=""
+                    />
+                    <img
+                      class="a-send-btn"
+                      src="/images/arrow-right.svg"
                       alt=""
                     />
                     <!-- </div> -->
@@ -461,5 +474,7 @@
       </div>
     </footer>
     <script src="../javascript/navbar.js"></script>
+    <script src="../javascript/chats.js"></script>
+    <script src="../javascript/telegram.js"></script>
   </body>
 </html>

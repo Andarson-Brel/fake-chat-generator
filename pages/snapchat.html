@@ -147,7 +147,7 @@
                 </div>
                 <div class="profile-input">
                   <h4>Profile Photo</h4>
-                  <button class="active-button">Select Image</button>
+                  <button class="active-button">Add Message</button>
                 </div>
               </div>
             </form>
@@ -162,7 +162,7 @@
                   rows="4"
                 ></textarea>
               </div>
-              <button class="active-button">Add Message</button>
+              <button class="i-rec-btn active-button">Add Message</button>
             </form>
           </div>
         </div>
@@ -198,68 +198,71 @@
                     src="/images/snapchat-chat-user.svg"
                     alt=""
                   />
-                  <p class="mg-rt">john doe</p>
+                  <p class="mg-rt snap-user">john doe</p>
                 </div>
 
                 <img src="/images/snapchat-chat-call-arrow.svg" alt="" />
               </div>
               <div class="chat-section">
-                <div class="chat">
-                  <div class="i-chat">
-                    <div class="i-chat__div">
-                      <p class="i-my-chat">ME</p>
-                      <div class="i-chat-msgs i-my-msgs">
-                        <p>Hii</p>
-                        <p>Hello</p>
-                        <p>How are you!</p>
-                      </div>
+                <!-- <div class="i-chat"> -->
+                <div class="i-chat">
+                  <div class="i-chat__div">
+                    <p class="i-my-chat">ME</p>
+                    <div class="i-chat-msgs i-my-msgs">
+                      <p>Hii</p>
+                      <p>Hello</p>
+                      <p>How are you!</p>
                     </div>
-                    <div class="i-chat__div">
-                      <p class="i-rec-chat">JACK</p>
-                      <div class="i-chat-msgs i-rec-msgs">
-                        <p>Good</p>
-                        <p>Nice</p>
-                        <p>Wonderful</p>
-                      </div>
+                  </div>
+                  <div class="i-chat__div">
+                    <p class="i-rec-chat">JACK</p>
+                    <div class="i-chat-msgs i-rec-msgs">
+                      <p>Good</p>
+                      <p>Nice</p>
+                      <p>Wonderful</p>
                     </div>
-                    <div class="i-chat__div">
-                      <p class="i-my-chat">ME</p>
-                      <div class="i-chat-msgs i-my-msgs">
-                        <p>Good</p>
-                        <p>Nice</p>
-                        <p>Wonderful</p>
-                        <p>Amazing</p>
-                      </div>
+                  </div>
+                  <div class="i-chat__div">
+                    <p class="i-my-chat">ME</p>
+                    <div class="i-chat-msgs i-my-msgs">
+                      <p>Good</p>
+                      <p>Nice</p>
+                      <p>Wonderful</p>
+                      <p>Amazing</p>
                     </div>
-                    <div class="i-chat__div">
-                      <p class="i-rec-chat">JACK</p>
-                      <div class="i-chat-msgs i-rec-msgs">
-                        <p>Hii</p>
-                        <p>Hello</p>
-                        <p>How are you!</p>
-                      </div>
+                  </div>
+                  <div class="i-chat__div">
+                    <p class="i-rec-chat">JACK</p>
+                    <div class="i-chat-msgs i-rec-msgs">
+                      <p>Hii</p>
+                      <p>Hello</p>
+                      <p>How are you!</p>
                     </div>
                   </div>
                 </div>
+                <!-- </div> -->
                 <!-- ============ -->
                 <!-- INPUT SECTION -->
                 <div class="i-input__div d-flex-space-a">
                   <div class="snap-cam d-flex">
                     <img src="/images/ic_baseline-photo-camera.svg" alt="" />
                   </div>
-                  <div class="i-chat__input--div">
-                    <input
-                      class="i-chat__input"
-                      type="text"
-                      placeholder="send a chat"
-                      cols="30"
-                    />
-                    <img
-                      class="i-chat__input--icon"
-                      src="/images/snapchat-mic.svg"
-                      alt=""
-                    />
-                  </div>
+                  <form action="" class="inp-form">
+                    <div class="i-chat__input--div">
+                      <input
+                        class="i-chat__input i-inp"
+                        type="text"
+                        placeholder="send a chat"
+                        cols="30"
+                      />
+                      <img
+                        class="i-chat__input--icon"
+                        src="/images/snapchat-mic.svg"
+                        alt=""
+                      />
+                    </div>
+                  </form>
+
                   <img src="/images/snapchat-emoji.svg" alt="" />
                   <img src="/images/snapchat-gallery.svg" alt="" />
                   <img src="/images/snapchat-rocket.svg" alt="" />
@@ -324,5 +327,7 @@
       </div>
     </footer>
     <script src="../javascript/navbar.js"></script>
+    <script src="../javascript/chats.js"></script>
+    <script src="../javascript/snapchat.js"></script>
   </body>
 </html>

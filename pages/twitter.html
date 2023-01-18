@@ -163,7 +163,10 @@
                   rows="4"
                 ></textarea>
               </div>
-              <button class="active-button">Add Message</button>
+              <button class="i-rec-btn active-button">Add Message</button>
+              <button class="a-rec-btn active active-button">
+                Add Message
+              </button>
             </form>
           </div>
         </div>
@@ -294,18 +297,22 @@
                   />
 
                   <textarea
+                    class="i-inp"
                     name="message-input"
                     id="sender-message-input"
                     cols="10"
                     rows="1"
-                    placeholder=""
-                  >
-Start a message</textarea
-                  >
+                    placeholder="Start a message"
+                  ></textarea>
                   <img
                     src="../images/twiter-vn.svg"
                     alt=""
                     class="twitter-vn"
+                  />
+                  <img
+                    src="/images/arrow-right.svg"
+                    class="i-send-btn"
+                    alt=""
                   />
                 </div>
               </div>
@@ -429,6 +436,7 @@ Start a message</textarea
                   />
 
                   <textarea
+                    class="a-inp"
                     name="message-input"
                     id="sender-message-input"
                     cols="10"
@@ -479,5 +487,7 @@ Start a message</textarea
       </div>
     </footer>
     <script src="../javascript/navbar.js"></script>
+    <script src="../javascript/chats.js"></script>
+    <script src="../javascript/twitter.js"></script>
   </body>
 </html>

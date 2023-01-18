@@ -1,8 +1,17 @@
+:root {
+  --shw: inline-block;
+  --none: none;
+}
+
 .d-align {
   align-items: center;
 }
 .mg-rt {
   margin: 0 9px;
+}
+.mg-rt-r {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .mg-rt-lg {
   margin: 0 13px;
@@ -34,11 +43,29 @@
 .android-header {
   padding: 0;
 }
-.chat {
+.i-chat,
+.a-chat {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
 }
-.chat::-webkit-scrollbar {
+.i-chat::-webkit-scrollbar,
+.a-chat::-webkit-scrollbar {
   display: none;
+}
+.a-rec-btn.active {
+  display: none;
+}
+.i-rec-btn.active {
+  display: none;
+}
+.inp-img {
+  display: var(--shw);
+}
+
+.i-send-btn {
+  display: var(--none);
+}
+.a-send-btn {
+  display: var(--none);
 }

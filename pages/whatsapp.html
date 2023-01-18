@@ -164,7 +164,10 @@
                   rows="4"
                 ></textarea>
               </div>
-              <button class="active-button">Add Message</button>
+              <button class="i-rec-btn active active-button">
+                Add Message
+              </button>
+              <button class="a-rec-btn active-button">Add Message</button>
             </form>
           </div>
         </div>
@@ -196,13 +199,13 @@
               <div class="i-chat__nav d-flex-space-b">
                 <div class="d-flex">
                   <div class="d-flex d-align">
-                    <img src="images/iphone-left-icon.svg" alt="" />
+                    <img src="/images/iphone-left-icon.svg" alt="" />
                     <p class="mg-rt ur-msg">12</p>
                   </div>
                   <div class="d-flex mg-rt">
                     <img
                       class="i-chat__profile-pic"
-                      src="images/profile.svg"
+                      src="/images/profile.svg"
                       alt=""
                     />
                     <p class="d-align mg-rt">
@@ -213,18 +216,14 @@
                 </div>
                 <div>
                   <img src="images/call-icon.svg" alt="" />
-                  <img
-                    class="mg-rt-lg"
-                    src="images/video-call-icon.svg"
-                    alt=""
-                  />
+                  <img class="mg-rt-lg" src="/images/arrow-left.svg" alt="" />
                 </div>
               </div>
 
               <div class="chat-section">
                 <div class="i-chat__timestamp sm-fnt">29 Sep 2020</div>
                 <!-- THE USER CHAT -->
-                <div class="chat">
+                <div class="i-chat">
                   <div class="i-my-chat i-chat__bubble">
                     <p>
                       Hi, there! I would like to ask about my order #1920543.
@@ -254,11 +253,11 @@
                     <div class="i-rec-pointy-stuff i-pointy-stuff"></div>
                   </div>
                 </div>
-                <div class="d-flex-space-a i-chat__input-section">
+                <div class="d-flex-space-b d-align i-chat__input-section">
                   <img class="mg-rt" src="/images/whatsapp-plus.svg" alt="" />
-                  <div class="i-chat__input--div">
+                  <div class="i-chat__input--div inp-div">
                     <textarea
-                      class="i-chat__input"
+                      class="i-chat__input i-inp"
                       name="i-input"
                       id=""
                       cols="1"
@@ -272,8 +271,13 @@
                   </div>
                   <img src="/images/whatsapp-Camera.svg" alt="" />
                   <img
-                    class="mg-rt"
+                    class="mg-rt inp-img"
                     src="/images/whatsapp=Microphone.svg"
+                    alt=""
+                  />
+                  <img
+                    src="/images/whatsapp-Camera.svg"
+                    class="i-send-btn"
                     alt=""
                   />
                 </div>
@@ -326,7 +330,7 @@
               </header>
               <div class="chat-section">
                 <!-- THE USER CHAT -->
-                <div class="chat">
+                <div class="a-chat">
                   <div class="a-receiver-chat a-chat__bubble">
                     <p>
                       Hello there. Thanks for the follow. Did you notice, that I
@@ -362,17 +366,21 @@
                     <img src="/images/emoji-icon.svg" alt="" />
 
                     <textarea
-                      class="i-chat__input a-chat__input"
-                      name="a-input"
+                      class="i-chat__input a-chat__input a-inp"
+                      name="a-input "
                       id=""
                       cols="1"
                       rows="1"
                       placeholder="type a message"
                     ></textarea>
-                    <img src="/images/whatsapp-comment-right-icon.svg" alt="" />
+                    <img
+                      class="inp-img"
+                      src="/images/whatsapp-comment-right-icon.svg"
+                      alt=""
+                    />
                   </div>
                   <img
-                    class="mg-rt"
+                    class="mg-rt a-send-btn"
                     src="/images/whatsapp-recoder.png.svg"
                     alt=""
                   />
@@ -413,5 +421,7 @@
       </div>
     </footer>
     <script src="../javascript/navbar.js"></script>
+    <script src="../javascript/chats.js"></script>
+    <script src="../javascript/whatsapp.js"></script>
   </body>
 </html>
