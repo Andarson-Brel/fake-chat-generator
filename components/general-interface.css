@@ -42,7 +42,6 @@ textarea:focus {
   margin-bottom: 1rem;
 }
 .profile-photo {
-  padding: 0.5rem;
   background: white;
 }
 .message .input-containers h4 {
@@ -81,6 +80,7 @@ textarea:focus {
   position: relative;
 }
 .iphone {
+  display: none;
   margin: 0 auto;
   width: 375px;
   height: 890px;
@@ -145,11 +145,13 @@ textarea:focus {
   position: absolute;
   bottom: -1rem;
 }
+
 .iphone.active,
 .android.active {
-  display: none;
+  display: block;
 }
 .android {
+  display: none;
   margin: 0 auto;
   width: 360px;
   height: 700px;
@@ -215,6 +217,21 @@ textarea:focus {
 }
 .dsclaimer-heading {
   color: #ff0303;
+}
+input[type="file"] {
+  display: none;
+}
+
+.profile-photo {
+  width: 60px;
+  height: 66px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-photo img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
 }
 /* respobsiveness for all chat interface */
 @media (max-width: 1000px) {
