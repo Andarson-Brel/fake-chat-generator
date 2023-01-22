@@ -40,3 +40,7 @@
   background-color: var(--secondary-color);
   color: var(--background-color);
 }
+
+.download.inactive {
+  display: none;
+}

@@ -64,6 +64,45 @@
     </header>
     <!-- =========================End of navbar======================= -->
     <div class="main-container ninety-percent">
+      <div class="card">
+        <div class="card-contents">
+          <h4 class="card__name">Having Issues on how to use?</h4>
+
+          <p>
+            <span class="card__read-more">
+              Go To Control Panel
+              <br />
+              1. Enter Desired Battery percentage, and it will
+              automaticallyreflect on the battery percentage section.
+              <br />
+
+              2. Click on the "Upload Image" button, select the desired image,
+              The profile image icon on the chat interface should now display
+              the inputted image.
+              <br />
+              3. Input the desired username in the designated field and it will
+              automatically display on the username section on the chat
+              interface
+              <br />
+              4. Input if the user is online or offline. The status indicator on
+              the chat interface should now display the selected option.
+              <br />
+              5. Input the desired message in the message filed for the mimicked
+              sender and it will automatically display on the sender section on
+              the chat interface.
+              <br />
+              6. Input the desired message in the designated field for the user
+              sender and it will automatically display on the user sender
+              section on the chat interface there by mimicking your own respons.
+              <br />
+              7. Click on the "Download" button to download the chat section as
+              a screenshot.</span
+            >
+          </p>
+
+          <p class="read-more-btn">Read Guide...</p>
+        </div>
+      </div>
       <div class="general-interface-container d-flex">
         <div class="control-panel">
           <h3 class="control-panel-heading">Chat Generator Setting</h3>
@@ -166,5 +205,30 @@
         <button class="inactive-button move-btn">Download Chat as Image</button>
       </div>
     </div>
+
+    <script>
+      const readMoreBtn = document.querySelector(".read-more-btn");
+
+      const text = document.querySelector(".card__read-more");
+
+      const cardHolder = document.querySelector(".card-holder");
+
+      readMoreBtn.addEventListener("click", (e) => {
+        const current = e.target;
+
+        const isReadMoreBtn = current.className.includes("read-more-btn");
+
+        if (!isReadMoreBtn) return;
+
+        const currentText =
+          e.target.parentNode.querySelector(".card__read-more");
+
+        currentText.classList.toggle("card__read-more--open");
+
+        current.textContent = current.textContent.includes("Read Less...")
+          ? "Read More..."
+          : "Read Less...";
+      });
+    </script>
   </body>
 </html>

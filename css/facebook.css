@@ -32,7 +32,8 @@
   align-items: center;
 }
 .verified {
-  width: 18px;
+  display: none;
+  width: 12px;
 }
 .flag {
   width: 24px;
@@ -138,8 +139,7 @@
   right: 70px;
 }
 .navigation-icon img {
-  width: 26px;
-  margin-right: 1rem;
+  width: 18px;
 }
 .chat-input .camera {
   background: #007aff;

@@ -122,6 +122,45 @@
     </header>
     <!-- =========================End of navbar======================= -->
     <div class="main-container ninety-percent">
+      <div class="card">
+        <div class="card-contents">
+          <h4 class="card__name">Having Issues on how to use?</h4>
+
+          <p>
+            <span class="card__read-more">
+              Go To Control Panel
+              <br />
+              1. Enter Desired Battery percentage, and it will
+              automaticallyreflect on the battery percentage section.
+              <br />
+
+              2. Click on the "Upload Image" button, select the desired image,
+              The profile image icon on the chat interface should now display
+              the inputted image.
+              <br />
+              3. Input the desired username in the designated field and it will
+              automatically display on the username section on the chat
+              interface
+              <br />
+              4. Input if the user is online or offline. The status indicator on
+              the chat interface should now display the selected option.
+              <br />
+              5. Input the desired message in the message filed for the mimicked
+              sender and it will automatically display on the sender section on
+              the chat interface.
+              <br />
+              6. Input the desired message in the designated field for the user
+              sender and it will automatically display on the user sender
+              section on the chat interface there by mimicking your own respons.
+              <br />
+              7. Click on the "Download" button to download the chat section as
+              a screenshot.</span
+            >
+          </p>
+
+          <p class="read-more-btn">Read Guide...</p>
+        </div>
+      </div>
       <div class="general-interface-container d-flex">
         <div class="control-panel">
           <h3 class="control-panel-heading">Chat Generator Setting</h3>
@@ -130,27 +169,39 @@
             <form action="sender-details" class="sender-details">
               <div class="input-containers">
                 <label for="battery"><h4>Battery Percentage</h4></label>
-                <input type="text" placeholder="50%" />
+                <input type="text" placeholder="50%" class="battery-input" />
               </div>
 
               <div class="input-containers">
                 <label for="User name"><h4>Direct Message With</h4></label>
-                <input type="text" placeholder="john doe" />
+                <input
+                  type="text"
+                  placeholder="john doe"
+                  class="username-input"
+                />
               </div>
 
               <div class="input-containers">
                 <label for="status"><h4>Status</h4></label>
-                <input type="text" placeholder="Online" />
+                <input type="text" placeholder="Online" class="status-input" />
               </div>
             </form>
             <form action="" class="sender-profile">
               <div class="sender-container d-flex-space-a">
-                <div class="profile-photo">
+                <div class="profile-photo profile-img">
                   <img src="../images/profile.svg" alt="" />
                 </div>
                 <div class="profile-input">
                   <h4>Profile Photo</h4>
-                  <button class="active-button">Select Image</button>
+                  <input
+                    type="file"
+                    accept="images/*"
+                    class="upload-img"
+                    id="upload-img-btn"
+                  />
+                  <label for="upload-img-btn" class="active-button"
+                    >Select Image</label
+                  >
                 </div>
               </div>
             </form>
@@ -172,18 +223,18 @@
         <div class="preview-section">
           <div class="preview-header d-flex-space-b">
             <div class="preview-btn-div">
-              <button class="inactive-button active">iPhone</button>
-              <button class="inactive-button">Android</button>
+              <button class="inactive-button switch active">iPhone</button>
+              <button class="inactive-button switch">Android</button>
             </div>
             <h2 class="preview-heading">Generate Fake facebook Chat</h2>
           </div>
           <h2 class="preview-title">Preview</h2>
 
           <div class="device-container">
-            <div class="iphone">
+            <div class="iphone device active" id="iphone">
               <header class="mobile-header">
                 <div class="task-bar d-flex-space-b">
-                  <p class="iphone-time time">12:00</p>
+                  <p class="iphone-time time local-time">12:00</p>
                   <div class="network-wifi d-flex">
                     <img src="../images/Mobile Signal.svg" alt="" />
                     <img src="../images/Wifi.svg" alt="" />
@@ -203,10 +254,10 @@
                       class="iphone-arrow-left"
                     />
                     <div class="user-profile-detail">
-                      <div class="profile-img">
+                      <div class="profile-img profile-photo">
                         <img src="../images/profile.svg" alt="" />
                       </div>
-                      <p class="user-name">Daxxie</p>
+                      <p class="user-name username">Daxxie</p>
                       <img
                         src="../images/verified.svg"
                         alt=""
@@ -337,10 +388,10 @@ Aa  </textarea
                 <img src="../images/Home-indicator.svg" alt="" />
               </div>
             </div>
-            <div class="android active">
+            <div class="android device" id="android">
               <header class="mobile-header">
                 <div class="android-tasbar d-flex-space-b">
-                  <div class="android-time time">12:00pm</div>
+                  <div class="android-time time local-time">12:00pm</div>
 
                   <div class="android-network-battery d-flex-space-b">
                     <img src="../images/Mobile Signal.svg" alt="" />
@@ -361,10 +412,10 @@ Aa  </textarea
                       class="arrow-left"
                     />
                     <div class="user-profile-detail">
-                      <div class="profile-img">
+                      <div class="profile-img profile-photo">
                         <img src="../images/profile.svg" alt="" />
                       </div>
-                      <p class="user-name">Daxxie</p>
+                      <p class="user-name username">Daxxie</p>
                       <img
                         src="../images/verified.svg"
                         alt=""
@@ -500,7 +551,13 @@ Message...  </textarea
         </div>
       </div>
       <div class="btn-container">
-        <button class="inactive-button move-btn">Download Chat as Image</button>
+        <a class="inactive-button move-btn download" id="iphone-btn">
+          Download Chat as Image
+        </a>
+
+        <a class="inactive-button move-btn download inactive" id="android-btn">
+          Download Chat as Image
+        </a>
       </div>
 
       <div class="disclaimer">
@@ -530,5 +587,12 @@ Message...  </textarea
       </div>
     </footer>
     <script src="../javascript/navbar.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+
+    <script src="../javascript/download.js"></script>
+    <script src="../javascript/control-panel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/dist/dom-to-image.min.js"></script>
   </body>
 </html>

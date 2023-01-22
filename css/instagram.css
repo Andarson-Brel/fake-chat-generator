@@ -31,7 +31,8 @@
   align-items: center;
 }
 .verified {
-  width: 18px;
+  display: none;
+  width: 12px;
 }
 .flag {
   width: 24px;
