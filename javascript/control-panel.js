@@ -13,7 +13,7 @@ const tabs = document.querySelectorAll(".device");
 
 const inputFile = document.querySelector("#upload-img-btn");
 const imgAreas = document.querySelectorAll(".profile-photo");
-
+const downloadBtn = document.querySelectorAll(".download");
 // ========================END OF SELECTORS===========================
 
 // ===================================BATTERY FUNCTIONALITY======================================
@@ -78,12 +78,12 @@ tabBtn.forEach((tab, index) => {
       tab.classList.remove("active");
       tab.classList.remove("htmlContent");
     });
+    downloadBtn.forEach((btn) => {
+      btn.classList.toggle("inactive");
+    });
 
     tab.classList.add("active");
     tab.classList.add("htmlContent");
-    function autoClick() {
-      $("#download").click();
-    }
 
     tabs.forEach((content) => {
       content.classList.remove("active");
@@ -101,4 +101,27 @@ tabBtn.forEach((tab, index) => {
     });
     recBtns[index].classList.remove("active");
   });
+});
+
+// ====================================================READ MORE FUNCTIONALITY========================
+const readMoreBtn = document.querySelector(".read-more-btn");
+
+const text = document.querySelector(".card__read-more");
+
+const cardHolder = document.querySelector(".card-holder");
+
+readMoreBtn.addEventListener("click", (e) => {
+  const current = e.target;
+
+  const isReadMoreBtn = current.className.includes("read-more-btn");
+
+  if (!isReadMoreBtn) return;
+
+  const currentText = e.target.parentNode.querySelector(".card__read-more");
+
+  currentText.classList.toggle("card__read-more--open");
+
+  current.textContent = current.textContent.includes("Read Less...")
+    ? "Read More..."
+    : "Read Less...";
 });

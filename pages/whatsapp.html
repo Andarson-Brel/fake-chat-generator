@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="../css/utilities.css" />
     <link rel="stylesheet" href="../css/whatsapp.css" />
   </head>
-  <body onload="autoClick();">
+  <body>
     <!-- ===================Begining of navbar====================== -->
     <header class="header">
       <nav class="nav d-flex-space-b ninety-percent">
@@ -121,6 +121,45 @@
     </header>
     <!-- =========================End of navbar======================= -->
     <div class="main-container ninety-percent">
+      <div class="card">
+        <div class="card-contents">
+          <h4 class="card__name">Having Issues on how to use?</h4>
+
+          <p>
+            <span class="card__read-more">
+              Go To Control Panel
+              <br />
+              1. Enter Desired Battery percentage, and it will
+              automaticallyreflect on the battery percentage section.
+              <br />
+
+              2. Click on the "Upload Image" button, select the desired image,
+              The profile image icon on the chat interface should now display
+              the inputted image.
+              <br />
+              3. Input the desired username in the designated field and it will
+              automatically display on the username section on the chat
+              interface
+              <br />
+              4. Input if the user is online or offline. The status indicator on
+              the chat interface should now display the selected option.
+              <br />
+              5. Input the desired message in the message filed for the mimicked
+              sender and it will automatically display on the sender section on
+              the chat interface.
+              <br />
+              6. Input the desired message in the designated field for the user
+              sender and it will automatically display on the user sender
+              section on the chat interface there by mimicking your own respons.
+              <br />
+              7. Click on the "Download" button to download the chat section as
+              a screenshot.</span
+            >
+          </p>
+
+          <p class="read-more-btn">Read Guide...</p>
+        </div>
+      </div>
       <div class="general-interface-container d-flex">
         <div class="control-panel">
           <h3 class="control-panel-heading">Chat Generator Setting</h3>
@@ -176,10 +215,7 @@
                   rows="4"
                 ></textarea>
               </div>
-              <button class="i-rec-btn active-button">Add Message</button>
-              <button class="a-rec-btn active active-button">
-                Add Message
-              </button>
+              <button class="active-button">Add Message</button>
             </form>
           </div>
         </div>
@@ -195,7 +231,7 @@
 
           <div class="device-container">
             <!-- IPHONE -->
-            <div class="iphone device active htmlContent">
+            <div class="iphone device active htmlContent" id="iphone">
               <div class="task-bar d-flex-space-b">
                 <img src="../images/Mobile Signal.svg" alt="" />
                 <p class="iphone-time local-time">12:00</p>
@@ -238,7 +274,7 @@
               <div class="chat-section">
                 <div class="i-chat__timestamp sm-fnt">29 Sep 2020</div>
                 <!-- THE USER CHAT -->
-                <div class="i-chat">
+                <div class="chat">
                   <div class="i-my-chat i-chat__bubble">
                     <p>
                       Hi, there! I would like to ask about my order #1920543.
@@ -268,11 +304,11 @@
                     <div class="i-rec-pointy-stuff i-pointy-stuff"></div>
                   </div>
                 </div>
-                <div class="d-flex d-align i-chat__input-section">
+                <div class="d-flex-space-a i-chat__input-section">
                   <img class="mg-rt" src="/images/whatsapp-plus.svg" alt="" />
-                  <div class="inp-div">
+                  <div class="i-chat__input--div">
                     <textarea
-                      class="i-chat__input i-inp inp"
+                      class="i-chat__input"
                       name="i-input"
                       id=""
                       rows="1"
@@ -289,13 +325,13 @@
                     alt=""
                   />
                   <img
-                    class="mg-rt inp-img"
+                    class="mg-rt"
                     src="/images/whatsapp=Microphone.svg"
                     alt=""
                   />
                   <img
                     src="/images/whatsapp-Camera.svg"
-                    class="mg-rt i-send-btn send"
+                    class="i-send-btn send"
                     alt=""
                   />
                 </div>
@@ -305,7 +341,7 @@
               </div>
             </div>
             <!-- ANDROID -->
-            <div class="android device">
+            <div class="android device" id="android">
               <header class="android-header">
                 <div class="android-taskbar d-flex-space-b">
                   <div class="android-time local-time">
@@ -347,7 +383,7 @@
               </header>
               <div class="chat-section">
                 <!-- THE USER CHAT -->
-                <div class="a-chat">
+                <div class="chat">
                   <div class="a-receiver-chat a-chat__bubble">
                     <p>
                       Hello there. Thanks for the follow. Did you notice, that I
@@ -383,21 +419,17 @@
                     <img src="/images/emoji-icon.svg" alt="" />
 
                     <textarea
-                      class="i-chat__input a-chat__input a-inp inp"
-                      name="a-input "
+                      class="i-chat__input a-chat__input"
+                      name="a-input"
                       id=""
                       cols="1"
                       rows="1"
                       placeholder="type a message"
                     ></textarea>
-                    <img
-                      class="inp-img"
-                      src="/images/whatsapp-comment-right-icon.svg"
-                      alt=""
-                    />
+                    <img src="/images/whatsapp-comment-right-icon.svg" alt="" />
                   </div>
                   <img
-                    class="mg-rt a-send-btn send"
+                    class="mg-rt"
                     src="/images/whatsapp-recoder.png.svg"
                     alt=""
                   />
@@ -408,7 +440,11 @@
         </div>
       </div>
       <div class="btn-container">
-        <a class="inactive-button move-btn" id="download">
+        <a class="inactive-button move-btn download" id="iphone-btn">
+          Download Chat as Image
+        </a>
+
+        <a class="inactive-button move-btn download inactive" id="android-btn">
           Download Chat as Image
         </a>
       </div>
@@ -439,13 +475,12 @@
         /></a>
       </div>
     </footer>
-    <script src="../javascript/chats.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 
     <script src="../javascript/download.js"></script>
     <script src="../javascript/navbar.js"></script>
     <script src="../javascript/control-panel.js"></script>
-    <script src="../javascript/whatsapp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/dist/dom-to-image.min.js"></script>
   </body>
 </html>

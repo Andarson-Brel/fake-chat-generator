@@ -215,6 +215,10 @@ textarea:focus {
 .disclaimer-icon {
   margin-bottom: 1rem;
 }
+.iphone,
+.android {
+  font-size: 1.4rem;
+}
 .dsclaimer-heading {
   color: #ff0303;
 }
@@ -233,6 +237,58 @@ input[type="file"] {
   width: 100%;
   height: 100%;
 }
+
+.card {
+  width: 100%;
+  border-radius: 2px solid var(--secondary-color);
+  color: var(--primary-color);
+  margin: 2rem auto;
+  border-radius: 20px;
+}
+
+.card__name {
+  font-size: 1em;
+}
+
+.card-contents {
+  padding: 1rem;
+}
+
+.card__read-more {
+  display: block;
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s;
+}
+
+.card__read-more--open {
+  display: block;
+  opacity: 1;
+  height: 25rem;
+  font-size: 1.4rem;
+}
+.card__read-more br {
+  margin-bottom: 1rem;
+}
+.read-more-btn {
+  display: inline-block;
+
+  color: var(--secondary-color);
+  padding: 0.5rem 0.8rem 0.8rem 0;
+  font-size: 1em;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.read-more-btn:hover {
+  background-color: var(--secondary-color-light);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  color: var(--primary-color);
+}
 /* respobsiveness for all chat interface */
 @media (max-width: 1000px) {
   .general-interface-container {
@@ -244,6 +300,9 @@ input[type="file"] {
   }
   .control-panel {
     width: 100%;
+  }
+  .card__read-more--open {
+    height: 35rem;
   }
 }
 
@@ -269,5 +328,20 @@ input[type="file"] {
   .preview-section {
     padding: 1rem;
     overflow: auto;
+  }
+  .card__read-more--open {
+    height: 42rem;
+  }
+  .iphone,
+  .android {
+    width: 100%;
+  }
+  .device-container {
+    width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .card__read-more--open {
+    height: 48rem;
   }
 }

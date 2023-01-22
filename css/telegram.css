@@ -43,6 +43,9 @@
   bottom: 0;
 }
 
+.battery-percentage-iphone {
+  background-color: black;
+}
 .i-chat__input-section {
   position: absolute;
   bottom: 120px;
@@ -83,11 +86,19 @@
   height: 700px;
   background: #fff;
 }
-.android-header {
+.mobile-header {
   width: 100%;
-  height: 80px;
+  background-color: #517da2;
 }
-
+.android-network-battery img {
+  color: white;
+}
+.android-time {
+  color: white;
+}
+.android-battery-container .battery-percentage {
+  background-color: #fff;
+}
 .android-taskbar {
   padding: 5px;
   background-color: #426382;
