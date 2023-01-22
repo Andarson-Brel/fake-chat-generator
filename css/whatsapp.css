@@ -48,12 +48,17 @@
 }
 .i-chat__bubble {
   background-color: var(--background-color);
-  max-width: 80%;
   border-radius: 13px;
-  padding: 0.8rem 0.8rem 1.7rem;
-  font-size: 1.7rem;
-  margin: 1rem;
+  padding: 0.5rem 1rem 1.15rem;
+  font-size: 1.4rem;
+  margin: 0.4rem 1.5rem;
   position: relative;
+  min-width: 30%;
+  max-width: 80%;
+  display: table-cell;
+  word-wrap: break-word;
+  word-break: break-all;
+  z-index: 3;
 }
 .i-my-chat {
   align-self: flex-end;
@@ -65,6 +70,7 @@
 }
 /* THIS IS WHAT GIVES THE CHAT BUBBLE EFFECT */
 .i-pointy-stuff {
+  z-index: 2;
   width: 15px;
   height: 15px;
   position: absolute;
@@ -98,8 +104,9 @@
 }
 
 .i-chat__input-section {
+  justify-items: center;
   position: absolute;
-  bottom: 120px;
+  bottom: 115px;
   left: 0;
   right: 0;
   background-color: #fff;
@@ -107,10 +114,10 @@
 
 .i-chat__input {
   width: 100%;
-  padding: 5px;
+  max-height: 200px;
+  padding: 0.5rem 4rem 0.5rem 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
-  position: relative;
   display: inline;
   background-color: transparent;
   font-family: var(--chat-interface-font);
@@ -118,8 +125,12 @@
   color: rgba(0, 0, 0, 0.5);
   outline: none;
 }
-.i-chat__input--div {
+.i-chat__input p {
+  max-width: 100px;
+}
+.inp-div {
   width: 100%;
+  position: relative;
 }
 .i-chat__input:focus {
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -136,7 +147,7 @@
 .i-chat__input--img {
   position: absolute;
   top: 13px;
-  right: 5px;
+  right: 8px;
   background-color: #fff;
 }
 
@@ -213,13 +224,18 @@
 }
 
 .a-chat__bubble {
-  max-width: 80%;
   border-radius: 10px;
-  padding: 1.2rem 1.2rem 1.7rem;
+  padding: 0.8rem 0.8rem 1.5rem;
   font-size: 1.4rem;
   line-height: 2.4rem;
-  margin: 1rem 1.5rem;
+  margin: 0.4rem 1.5rem;
   position: relative;
+  min-width: 30%;
+  max-width: 80%;
+  display: table-cell;
+  word-wrap: break-word;
+  word-break: break-all;
+  z-index: 3;
 }
 .name {
   font-size: 15px;
@@ -234,7 +250,7 @@
   height: 100%;
   background-color: #fff;
   border-radius: 40px;
-  margin-left: 6px;
+  margin: 0 6px;
 }
 
 .icon__div {

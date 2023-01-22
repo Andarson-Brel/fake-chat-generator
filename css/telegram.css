@@ -42,9 +42,6 @@
   position: absolute;
   bottom: 0;
 }
-.iphone.active {
-  display: none;
-}
 
 .i-chat__input-section {
   position: absolute;
@@ -78,9 +75,6 @@
   position: absolute;
   top: 15px;
   right: 15px;
-}
-.android.active {
-  display: none;
 }
 
 .android {

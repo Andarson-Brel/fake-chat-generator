@@ -11,8 +11,10 @@ const aSend = document.querySelector(".a-send-btn");
 const iChatBoard = document.querySelectorAll(".i-chat");
 const aChatBoard = document.querySelectorAll(".a-chat");
 const recBtns = [iRecBtn, aRecBtn];
+
 let date = new Date();
 let difference = date.getMinutes() - 100;
+
 date.setMinutes(difference);
 const time = function () {
   return `${date.getHours()}:${date.getMinutes()}`;
@@ -25,7 +27,7 @@ const addImages = function (send) {
 
 const inputClear = function (input, board, send) {
   if (input)
-    input.addEventListener("click", function () {
+    input.addEventListener("input", function () {
       (function () {
         board.forEach((chat) => (chat.innerHTML = ""));
       })();
@@ -34,6 +36,7 @@ const inputClear = function (input, board, send) {
       if (send) send.style.setProperty("--none", "inline-block");
     });
 };
+
 const clearedChatboxes = function () {
   inputClear(iChatInput, iChatBoard, iSend);
   inputClear(aChatInput, aChatBoard, aSend);
@@ -44,8 +47,9 @@ const clearedChatboxes = function () {
 };
 
 clearedChatboxes();
+
 const generic = function (type, chat, chatBoard) {
   chatBoard.forEach((chats) => chats.insertAdjacentHTML("beforebegin", chat));
-  date.setMinutes(date.getMinutes() + Math.floor(Math.random() * 4));
+  date.setMinutes(date.getMinutes() + Math.floor(Math.random() * 2));
   type.value = "";
 };

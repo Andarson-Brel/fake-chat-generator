@@ -91,9 +91,3 @@
   padding: 7px;
   border-radius: 100%;
 }
-.iphone.active {
-  display: none;
-}
-.android.active {
-  display: none;
-}
