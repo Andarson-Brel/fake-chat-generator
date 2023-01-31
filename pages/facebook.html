@@ -26,6 +26,7 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <title>Facebook</title>
+    <link rel="stylesheet" href="../css/utilities.css" />
     <link rel="stylesheet" href="../components/general-interface.css" />
 
     <!-- ==================navbar-componentstylesheet======================= -->
@@ -216,7 +217,10 @@
                   rows="4"
                 ></textarea>
               </div>
-              <button class="active-button">Add Message</button>
+              <button class="active-button i-rec-btn">Add Message</button>
+              <button class="active-button active a-rec-btn">
+                Add Message
+              </button>
             </form>
           </div>
         </div>
@@ -286,7 +290,8 @@
               </header>
 
               <div class="chat-section">
-                <div class="chatbox">
+                <div class="i-chat-main chat"></div>
+                <div class="chatbox i-chat">
                   <p class="time-date">Jan 12, 2023 09</p>
                   <div class="chat-r">
                     <div class="sp"></div>
@@ -365,13 +370,12 @@
                   />
                   <textarea
                     name="message-input"
+                    class="i-inp"
                     id="sender-message-input"
                     cols="10"
                     rows="1"
                     placeholder=""
-                  >
-Aa  </textarea
-                  >
+                  ></textarea>
                   <img
                     src="../images/facebook-emoji.svg"
                     alt=""
@@ -380,7 +384,7 @@ Aa  </textarea
                   <img
                     src="../images/facebook-like.svg"
                     alt=""
-                    class="facebook-like"
+                    class="facebook-like i-send-btn"
                   />
                 </div>
               </div>
@@ -443,7 +447,8 @@ Aa  </textarea
                 </div>
               </header>
               <div class="chat-section">
-                <div class="chatbox">
+                <div class="a-chat-main chat"></div>
+                <div class="chatbox a-chat">
                   <p class="time-date">Jan 12, 2023 09</p>
                   <div class="chat-r">
                     <div class="sp"></div>
@@ -528,12 +533,12 @@ Aa  </textarea
                   <textarea
                     name="message-input"
                     id="sender-message-input"
+                    class="a-inp"
                     cols="10"
                     rows="1"
-                    placeholder=""
+                    placeholder="Message... "
                   >
-Message...  </textarea
-                  >
+                  </textarea>
                   <img
                     src="../images/facebook-emoji.svg"
                     alt=""
@@ -542,7 +547,7 @@ Message...  </textarea
                   <img
                     src="../images/facebook-like.svg"
                     alt=""
-                    class="facebook-like"
+                    class="facebook-like a-send-btn"
                   />
                 </div>
               </div>
@@ -594,5 +599,7 @@ Message...  </textarea
     <script src="../javascript/download.js"></script>
     <script src="../javascript/control-panel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/dist/dom-to-image.min.js"></script>
+    <script src="../javascript/chats.js"></script>
+    <script src="../javascript/instagram.js"></script>
   </body>
 </html>

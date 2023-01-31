@@ -43,16 +43,20 @@
 .android-header {
   padding: 0;
 }
+.chat,
 .i-chat,
 .a-chat {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
 }
+
+.chat::-webkit-scrollbar,
 .i-chat::-webkit-scrollbar,
 .a-chat::-webkit-scrollbar {
   display: none;
 }
+
 .a-rec-btn.active {
   display: none;
 }

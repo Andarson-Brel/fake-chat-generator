@@ -26,6 +26,7 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <title>Instagram</title>
+    <link rel="stylesheet" href="../css/utilities.css" />
     <link rel="stylesheet" href="../components/general-interface.css" />
 
     <!-- ==================navbar-componentstylesheet======================= -->
@@ -216,7 +217,10 @@
                   rows="4"
                 ></textarea>
               </div>
-              <button class="active-button">Add Message</button>
+              <button class="active-button i-rec-btn">Add Message</button>
+              <button class="active-button active a-rec-btn">
+                Add Message
+              </button>
             </form>
           </div>
         </div>
@@ -271,7 +275,8 @@
               </header>
 
               <div class="chat-section">
-                <div class="chatbox">
+                <div class="i-chat-main chat"></div>
+                <div class="chatbox i-chat">
                   <p class="time-date">Jan 12, 2023 09</p>
                   <div class="chat-r">
                     <div class="sp"></div>
@@ -338,19 +343,22 @@
                   <textarea
                     name="message-input"
                     id="sender-message-input"
+                    class="i-inp"
                     cols="10"
                     rows="1"
-                    placeholder=""
-                  >
-Message...</textarea
-                  >
+                    placeholder="Message..."
+                  ></textarea>
                   <img src="../images/Microphone.svg" alt="" class="mic" />
                   <img
                     src="../images/twitter-gallery.svg"
                     alt=""
                     class="gallery"
                   />
-                  <img src="../images/Plus.svg" alt="" class="plus" />
+                  <img
+                    src="../images/Plus.svg"
+                    alt=""
+                    class="plus i-send-btn"
+                  />
                 </div>
               </div>
               <div class="iphone-bottom">
@@ -408,7 +416,8 @@ Message...</textarea
                 </div>
               </header>
               <div class="chat-section">
-                <div class="chatbox">
+                <div class="a-chat-main chat"></div>
+                <div class="chatbox a-chat">
                   <p class="time-date">Jan 12, 2023 09</p>
                   <div class="chat-r">
                     <div class="sp"></div>
@@ -476,11 +485,10 @@ Message...</textarea
                     name="message-input"
                     id="sender-message-input"
                     cols="10"
+                    class="a-inp"
                     rows="1"
-                    placeholder=""
-                  >
-Message...</textarea
-                  >
+                    placeholder="Message..."
+                  ></textarea>
                   <img src="../images/Microphone.svg" alt="" class="mic" />
                   <img
                     src="../images/twitter-gallery.svg"
@@ -492,7 +500,11 @@ Message...</textarea
                     alt=""
                     class="comment-icon"
                   />
-                  <img src="../images/Plus.svg" alt="" class="plus" />
+                  <img
+                    src="../images/Plus.svg"
+                    alt=""
+                    class="plus a-send-btn"
+                  />
                 </div>
               </div>
             </div>
@@ -536,6 +548,8 @@ Message...</textarea
       </div>
     </footer>
     <script src="../javascript/navbar.js"></script>
+    <script src="../javascript/chats.js"></script>
+    <script src="../javascript/instagram.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>

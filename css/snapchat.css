@@ -16,7 +16,6 @@
   padding: 10px 0;
   flex-direction: column;
   background-color: #fff;
-  height: 100%;
 }
 .i-chat__div {
   justify-items: flex-start;

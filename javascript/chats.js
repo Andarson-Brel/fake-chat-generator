@@ -10,7 +10,20 @@ const iSend = document.querySelector(".i-send-btn");
 const aSend = document.querySelector(".a-send-btn");
 const iChatBoard = document.querySelectorAll(".i-chat");
 const aChatBoard = document.querySelectorAll(".a-chat");
+const iChatMain = document.querySelectorAll(".i-chat-main");
+const aChatMain = document.querySelectorAll(".a-chat-main");
+const chatBox = document.querySelectorAll(".chatbox");
+
 const recBtns = [iRecBtn, aRecBtn];
+const chatMains = [iChatMain, aChatMain];
+let mess;
+let typeOfChat,
+  typeOfPoint,
+  id = 0;
+
+const iphone = "i";
+const android = "a";
+let snap, snapUser;
 
 let date = new Date();
 let difference = date.getMinutes() - 100;
@@ -24,9 +37,13 @@ const addImages = function (send) {
   inputImg.forEach((img) => img.style.setProperty("--shw", "inline-block"));
   if (send) send.style.setProperty("--none", "none");
 };
-
+const generic = function (type, chat, chatBoard) {
+  chatBoard.forEach((chats) => chats.insertAdjacentHTML("beforeend", chat));
+  if (date) date.setMinutes(date.getMinutes() + Math.floor(Math.random() * 2));
+  type.value = "";
+};
 const inputClear = function (input, board, send) {
-  if (input)
+  if (input) {
     input.addEventListener("input", function () {
       (function () {
         board.forEach((chat) => (chat.innerHTML = ""));
@@ -34,9 +51,20 @@ const inputClear = function (input, board, send) {
 
       inputImg.forEach((img) => img.style.setProperty("--shw", "none"));
       if (send) send.style.setProperty("--none", "inline-block");
-    });
-};
 
+      if (chatBox) {
+        let count = 0;
+        chatBox.forEach((ch) => {
+          ch.style.height = 0;
+          chatMains[count].forEach((cm) => (cm.style.height = "75%"));
+          count += 1;
+          // console.log(chatMains);
+        });
+      }
+    });
+  }
+};
+// console.log(chatBox);
 const clearedChatboxes = function () {
   inputClear(iChatInput, iChatBoard, iSend);
   inputClear(aChatInput, aChatBoard, aSend);
@@ -48,8 +76,11 @@ const clearedChatboxes = function () {
 
 clearedChatboxes();
 
-const generic = function (type, chat, chatBoard) {
-  chatBoard.forEach((chats) => chats.insertAdjacentHTML("beforebegin", chat));
-  date.setMinutes(date.getMinutes() + Math.floor(Math.random() * 2));
-  type.value = "";
+const addToUi = function (chatInput) {
+  if (iChatInput) {
+    generic(chatInput, Chat(iphone, id), iChatMain);
+  }
+  if (aChatInput) {
+    generic(chatInput, Chat(android, id), aChatMain);
+  }
 };

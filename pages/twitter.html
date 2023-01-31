@@ -26,6 +26,7 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <title>Twitter</title>
+    <link rel="stylesheet" href="../css/utilities.css" />
     <link rel="stylesheet" href="../components/general-interface.css" />
 
     <!-- ==================navbar-componentstylesheet======================= -->
@@ -269,7 +270,8 @@
                 </div>
               </header>
               <div class="chat-section">
-                <div class="chatbox">
+                <div class="i-chat-main chat"></div>
+                <div class="chatbox i-chat">
                   <div class="chat-r">
                     <div class="sp"></div>
                     <div class="mess mess-r">
@@ -408,7 +410,9 @@
                 </div>
               </header>
               <div class="chat-section">
-                <div class="chatbox">
+                <div class="a-chat-main chat"></div>
+
+                <div class="chatbox a-chat">
                   <div class="chat-r">
                     <div class="sp"></div>
                     <div class="mess mess-r">
@@ -492,14 +496,12 @@
                     id="sender-message-input"
                     cols="10"
                     rows="1"
-                    placeholder=""
-                  >
-Start a message</textarea
-                  >
+                    placeholder="Start a message"
+                  ></textarea>
                   <img
                     src="../images/twiter-vn.svg"
                     alt=""
-                    class="twitter-vn"
+                    class="twitter-vn a-send-btn"
                   />
                 </div>
               </div>
@@ -545,8 +547,9 @@ Start a message</textarea
     </footer>
     <script src="../javascript/navbar.js"></script>
     <script src="../javascript/chats.js"></script>
-    <script src="../javascript/twitter.js"></script>
 
+    <script src="../javascript/chats.js"></script>
+    <script src="../javascript/instagram.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 

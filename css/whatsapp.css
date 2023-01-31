@@ -56,9 +56,6 @@
   min-width: 30%;
   max-width: 80%;
   display: table-cell;
-  word-wrap: break-word;
-  word-break: break-all;
-  z-index: 3;
 }
 .i-my-chat {
   align-self: flex-end;
@@ -233,9 +230,6 @@
   min-width: 30%;
   max-width: 80%;
   display: table-cell;
-  word-wrap: break-word;
-  word-break: break-all;
-  z-index: 3;
 }
 .name {
   font-size: 15px;

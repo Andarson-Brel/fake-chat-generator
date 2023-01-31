@@ -25,6 +25,7 @@
 }
 .chat-section {
   padding-top: 0;
+  position: relative;
 }
 .user-profile-detail {
   display: flex;
@@ -114,6 +115,8 @@
   background: #eff2f4;
   margin: 1.6rem auto;
   border-radius: 20px;
+  /* position: absolute; */
+  /* bottom: 10px; */
 }
 .chat-input {
   display: flex;

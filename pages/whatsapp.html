@@ -215,7 +215,10 @@
                   rows="4"
                 ></textarea>
               </div>
-              <button class="active-button">Add Message</button>
+              <button class="active-button i-rec-btn">Add Message</button>
+              <button class="active active-button a-rec-btn">
+                Add Message
+              </button>
             </form>
           </div>
         </div>
@@ -273,8 +276,9 @@
 
               <div class="chat-section">
                 <div class="i-chat__timestamp sm-fnt">29 Sep 2020</div>
+                <div class="i-chat-main chat"></div>
                 <!-- THE USER CHAT -->
-                <div class="chat">
+                <div class="i-chat">
                   <div class="i-my-chat i-chat__bubble">
                     <p>
                       Hi, there! I would like to ask about my order #1920543.
@@ -308,7 +312,7 @@
                   <img class="mg-rt" src="/images/whatsapp-plus.svg" alt="" />
                   <div class="i-chat__input--div">
                     <textarea
-                      class="i-chat__input"
+                      class="i-chat__input i-inp"
                       name="i-input"
                       id=""
                       rows="1"
@@ -331,7 +335,7 @@
                   />
                   <img
                     src="/images/whatsapp-Camera.svg"
-                    class="i-send-btn send"
+                    class="i-send-btn"
                     alt=""
                   />
                 </div>
@@ -382,8 +386,9 @@
                 <!-- ============================================== -->
               </header>
               <div class="chat-section">
+                <div class="a-chat-main chat"></div>
                 <!-- THE USER CHAT -->
-                <div class="chat">
+                <div class="a-chat">
                   <div class="a-receiver-chat a-chat__bubble">
                     <p>
                       Hello there. Thanks for the follow. Did you notice, that I
@@ -419,7 +424,7 @@
                     <img src="/images/emoji-icon.svg" alt="" />
 
                     <textarea
-                      class="i-chat__input a-chat__input"
+                      class="i-chat__input a-chat__input a-inp"
                       name="a-input"
                       id=""
                       cols="1"
@@ -429,7 +434,7 @@
                     <img src="/images/whatsapp-comment-right-icon.svg" alt="" />
                   </div>
                   <img
-                    class="mg-rt"
+                    class="mg-rt a-send-btn"
                     src="/images/whatsapp-recoder.png.svg"
                     alt=""
                   />
@@ -482,5 +487,7 @@
     <script src="../javascript/navbar.js"></script>
     <script src="../javascript/control-panel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/dist/dom-to-image.min.js"></script>
+    <script src="../javascript/chats.js"></script>
+    <script src="../javascript/whatsapp.js"></script>
   </body>
 </html>
