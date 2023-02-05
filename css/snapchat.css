@@ -23,12 +23,12 @@
   padding: 5px 10px;
 }
 .i-my-chat {
-  font-size: 12px;
+  font-size: 1.5rem;
   color: #f23c57;
   font-weight: 700;
 }
 .i-rec-chat {
-  font-size: 12px;
+  font-size: 1.5rem;
   color: #0096e5;
   font-weight: 700;
 }
@@ -40,7 +40,7 @@
 }
 .i-chat-msgs {
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 1.6rem;
 }
 .i-input__div {
   position: absolute;

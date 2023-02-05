@@ -68,12 +68,12 @@
 }
 .mess-r {
   background: #1d9bf0;
-  border-radius: 20px 20px 0 20px;
+  border-radius: 20px 0 20px 20px;
   color: white;
 }
 .mess-l {
   background-color: rgba(0, 0, 0, 0.06);
-  border-radius: 20px 20px 20px 0;
+  border-radius: 0 20px 20px 20px;
 }
 
 .chat-input {
