@@ -10,12 +10,15 @@ const Chat = function (typeOfChat, mess, id) {
   ${typeOfChat === "l" ? `<div class="sp"></div>` : ""}
 </div>`;
 };
+
 const chatFormat = function (id, typeOfChat) {
   const el = document.querySelectorAll(`[data-id="${id}"]`);
+
   el.forEach((e) => {
     if (e.previousElementSibling) {
       const parent1 = e.previousElementSibling;
       const classType = parent1.classList.value;
+
       if (classType === `chat-${typeOfChat}`) {
         const child1 = parent1.querySelector(".mess");
         const child2 = e.querySelector(".mess");
@@ -26,10 +29,13 @@ const chatFormat = function (id, typeOfChat) {
         if (typeOfChat === "r") {
           child1.style.borderRadius = " 20px 20px 2px 20px";
         }
+
         child1.style.marginBottom = "2px";
         child2.style.marginTop = "0";
+
         if (parent1.previousElementSibling) {
           const classType2 = parent1.previousElementSibling.classList.value;
+
           if (classType2 === `chat-${typeOfChat}`) {
             if (typeOfChat === "l") {
               child1.style.borderRadius = " 2px 20px 20px 2px";
@@ -45,6 +51,7 @@ const chatFormat = function (id, typeOfChat) {
     }
   });
 };
+
 const completeChat = function (typeOfChats, chatInput1, chatInput2) {
   if (!chatInput1.value) return;
 

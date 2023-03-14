@@ -28,20 +28,26 @@ let snap, snapUser;
 let date = new Date();
 let difference = date.getMinutes() - 100;
 
+// set chat time
 date.setMinutes(difference);
 const time = function () {
   return `${date.getHours()}:${date.getMinutes()}`;
 };
 
+// add and remove certain images
 const addImages = function (send) {
   inputImg.forEach((img) => img.style.setProperty("--shw", "inline-block"));
   if (send) send.style.setProperty("--none", "none");
 };
+
+// add chat to chat bubble and screen
 const generic = function (type, chat, chatBoard) {
   chatBoard.forEach((chats) => chats.insertAdjacentHTML("beforeend", chat));
   if (date) date.setMinutes(date.getMinutes() + Math.floor(Math.random() * 2));
   type.value = "";
 };
+
+// clear preview chat bubbles
 const inputClear = function (input, board, send) {
   if (input) {
     input.addEventListener("input", function () {
